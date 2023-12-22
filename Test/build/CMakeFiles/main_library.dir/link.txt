@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libmain_library.a  CMakeFiles/main_library.dir/code/src/demo_02.cpp.o
+/usr/bin/ranlib ../lib/libmain_library.a

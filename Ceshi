@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ "$#" -lt 2 ]; then
+  echo "错误：请输入两个参数，文件名和提交备注。"
+  echo "格式为 git_push 提交文件 备注名称"
+fi
+
+if [ "$#" -eq 3 ]; then
+  echo "这123"
+fi

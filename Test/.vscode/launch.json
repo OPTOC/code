@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug FUSE",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/fuse_test",
+            "args": [
+                "/home/zjh/WZ_mount_ceshi/",
+                "-o",
+                "modules=subdir,subdir=/home/zjh/fuss_cis",
+                "-d"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/bin",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build"
+        }
+    ]
+}

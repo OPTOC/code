@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zjh/wz_riscv/Test
+CMAKE_SOURCE_DIR = /home/zjh/wz_riscv/github/Test
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zjh/wz_riscv/Test/build
+CMAKE_BINARY_DIR = /home/zjh/wz_riscv/github/Test/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/Test/build/CMakeFiles /home/zjh/wz_riscv/Test/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles /home/zjh/wz_riscv/github/Test/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/Test/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -229,6 +229,33 @@ code/src/demo_02.cpp.s:
 	$(MAKE) -f CMakeFiles/main_library.dir/build.make CMakeFiles/main_library.dir/code/src/demo_02.cpp.s
 .PHONY : code/src/demo_02.cpp.s
 
+code/src/fuse_fun.o: code/src/fuse_fun.c.o
+
+.PHONY : code/src/fuse_fun.o
+
+# target to build an object file
+code/src/fuse_fun.c.o:
+	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/code/src/fuse_fun.c.o
+.PHONY : code/src/fuse_fun.c.o
+
+code/src/fuse_fun.i: code/src/fuse_fun.c.i
+
+.PHONY : code/src/fuse_fun.i
+
+# target to preprocess a source file
+code/src/fuse_fun.c.i:
+	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/code/src/fuse_fun.c.i
+.PHONY : code/src/fuse_fun.c.i
+
+code/src/fuse_fun.s: code/src/fuse_fun.c.s
+
+.PHONY : code/src/fuse_fun.s
+
+# target to generate assembly for a file
+code/src/fuse_fun.c.s:
+	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/code/src/fuse_fun.c.s
+.PHONY : code/src/fuse_fun.c.s
+
 code/src/fuse_test.o: code/src/fuse_test.c.o
 
 .PHONY : code/src/fuse_test.o
@@ -356,6 +383,9 @@ help:
 	@echo "... code/src/demo_02.o"
 	@echo "... code/src/demo_02.i"
 	@echo "... code/src/demo_02.s"
+	@echo "... code/src/fuse_fun.o"
+	@echo "... code/src/fuse_fun.i"
+	@echo "... code/src/fuse_fun.s"
 	@echo "... code/src/fuse_test.o"
 	@echo "... code/src/fuse_test.i"
 	@echo "... code/src/fuse_test.s"

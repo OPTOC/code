@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zjh/wz_riscv/Test/code/src/passthrough_fh.c" "/home/zjh/wz_riscv/Test/build/CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o"
+  "/home/zjh/wz_riscv/github/Test/code/src/passthrough_fh.c" "/home/zjh/wz_riscv/github/Test/build/CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

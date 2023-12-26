@@ -14,9 +14,7 @@ cassert
 rocksdb/db.h
 ../code/inc/rocksdb/db.h
 
-/home/zjh/wz_riscv/Test/code/src/fuse_test.c
-fuse.h
--
+../code/inc/fuse_fun.h
 ulockmgr.h
 -
 stddef.h
@@ -42,11 +40,19 @@ sys/time.h
 time.h
 -
 demo_02.h
-/home/zjh/wz_riscv/Test/code/src/demo_02.h
-sys/xattr.h
--
+../code/inc/demo_02.h
 sys/file.h
 -
+
+/home/zjh/wz_riscv/github/Test/code/src/fuse_fun.c
+fuse_fun.h
+/home/zjh/wz_riscv/github/Test/code/src/fuse_fun.h
+
+/home/zjh/wz_riscv/github/Test/code/src/fuse_test.c
+/usr/local/include/fuse3/fuse.h
+-
+fuse_fun.h
+/home/zjh/wz_riscv/github/Test/code/src/fuse_fun.h
 
 /usr/local/include/fuse3/fuse.h
 fuse_common.h
@@ -67,8 +73,6 @@ sys/uio.h
 /usr/local/include/fuse3/fuse_common.h
 fuse_config.h
 /usr/local/include/fuse3/fuse_config.h
-libfuse_config.h
-/usr/local/include/fuse3/libfuse_config.h
 fuse_opt.h
 /usr/local/include/fuse3/fuse_opt.h
 fuse_log.h
@@ -83,6 +87,4 @@ stdarg.h
 -
 
 /usr/local/include/fuse3/fuse_opt.h
-
-/usr/local/include/fuse3/libfuse_config.h
 

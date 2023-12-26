@@ -63,9 +63,9 @@ target_include_directories(xmp PRIVATE ${FUSE3_INCLUDE_DIRS})
  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
  
  add_library(main_library ${CODE_SRC}/demo_02.cpp)
- add_executable(fuse_test ${CODE_SRC}/fuse_test.c)
+ add_executable(fuse_test ${CODE_SRC}/fuse_test.c ${CODE_SRC}/fuse_fun.c)
  target_link_libraries(fuse_test PRIVATE main_library ${FUSE3_LIBRARIES} rocksdb)
- target_include_directories(fuse_test PRIVATE ${FUSE3_INCLUDE_DIRS})
+ target_include_directories(fuse_test PRIVATE ${FUSE3_INCLUDE_DIRS} ${CODE_INC} )
 
 #  set_target_properties(fuse_test PROPERTIES
 #         ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib

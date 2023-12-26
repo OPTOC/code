@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/fuse_test.dir/code/src/fuse_test.c.o  -o ../bin/fuse_test  ../lib/libmain_library.a -lfuse3 -lpthread -lrocksdb 
+/usr/bin/c++    -rdynamic CMakeFiles/fuse_test.dir/code/src/fuse_test.c.o CMakeFiles/fuse_test.dir/code/src/fuse_fun.c.o  -o ../bin/fuse_test  ../lib/libmain_library.a -lfuse3 -lpthread -lrocksdb 

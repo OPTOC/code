@@ -14,7 +14,7 @@ cassert
 rocksdb/db.h
 ../code/inc/rocksdb/db.h
 
-/home/zjh/wz_riscv/Test/code/src/demo_02.cpp
+/home/zjh/wz_riscv/github/Test/code/src/demo_02.cpp
 demo_02.h
-/home/zjh/wz_riscv/Test/code/src/demo_02.h
+/home/zjh/wz_riscv/github/Test/code/src/demo_02.h
 

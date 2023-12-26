@@ -1,0 +1,10 @@
+#!/bin/sh
+cd ../build
+if [ "$1" = "clean" ]; then
+	make clean
+elif [ "$1" = "c" ]; then
+	cmake ..
+else 
+	make
+fi
+cd ../bin

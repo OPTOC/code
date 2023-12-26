@@ -27,56 +27,10 @@
 
 #define _GNU_SOURCE
 
-#include <fuse.h>
-
-#ifdef HAVE_LIBULOCKMGR
-#include <ulockmgr.h>
-#endif
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <sys/stat.h>
-#include <dirent.h>
-#include <errno.h>
-#include <sys/time.h>
-#include <time.h>
-#include "demo_02.h"
-#ifdef HAVE_SETXATTR
-#include <sys/xattr.h>
-#endif
-#include <sys/file.h> /* flock(2) */
-// static const char *root_path = "/home/zjh/fuss_cis";
+#include "/usr/local/include/fuse3/fuse.h"
+#include "fuse_fun.h"
 const char* content_conut;
-int append_to_file(const char *filename, const char *command,const char *path,const char *state) {
-	
-    FILE *file;
-    file = fopen(filename, "a");
-	fuse_log(FUSE_LOG_INFO, "创建 %s\n", filename);
-    if (file == NULL) {
-        fprintf(stderr, "无法打开文件\n");
-        return 1;
-    }
-	const char* content = (path + strlen(content_conut));
-	// const char *content = strrchr(path, '/');
-	if (content == NULL) {
-        fuse_log(FUSE_LOG_ERR, "失败\n");
-        return 0;
-    }
-	content++;
-	fuse_log(FUSE_LOG_INFO, "路径 %s\n", path);
-	fuse_log(FUSE_LOG_INFO, "路径 %s\n", content);
-    time_t now = time(NULL);
-    struct tm *tm_now = localtime(&now);
-    char time_str[20];
-    strftime(time_str, sizeof(time_str), "%Y-%m-%d %H:%M:%S", tm_now);
 
-    fprintf(file, "[%s] %s %s %s\n", time_str, command,content,state);
-    fclose(file);
-    return 0;
-}
 
 // char* path_dir(const char *path)
 // {
@@ -271,7 +225,7 @@ static int xmp_mkdir(const char *path, mode_t mode)
         return -errno;
     }
 	rocksdb_Fun();
-	append_to_file(filename,command,path,state);
+	append_to_file( filename, command, path, state, content_conut);
 
 	return 0;
 }
@@ -711,7 +665,7 @@ struct fuse_opt option_spec[] = {
 
 int main(int argc, char *argv[]) {
     struct fuse_args args = FUSE_ARGS_INIT(argc, argv);
-
+	String.print();
     // 解析命令行参数
     if (fuse_opt_parse(&args, &opts, option_spec, NULL) == -1) {
         return 1;

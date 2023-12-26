@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zjh/wz_riscv/Test/code/src/passthrough_fh.c
+/home/zjh/wz_riscv/github/Test/code/src/passthrough_fh.c
 fuse.h
 -
 ulockmgr.h
@@ -57,8 +57,6 @@ sys/uio.h
 /usr/local/include/fuse3/fuse_common.h
 fuse_config.h
 /usr/local/include/fuse3/fuse_config.h
-libfuse_config.h
-/usr/local/include/fuse3/libfuse_config.h
 fuse_opt.h
 /usr/local/include/fuse3/fuse_opt.h
 fuse_log.h
@@ -73,6 +71,4 @@ stdarg.h
 -
 
 /usr/local/include/fuse3/fuse_opt.h
-
-/usr/local/include/fuse3/libfuse_config.h
 

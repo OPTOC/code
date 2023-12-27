@@ -124,19 +124,6 @@ fuse_test/fast:
 .PHONY : fuse_test/fast
 
 #=============================================================================
-# Target rules for targets named main_library
-
-# Build rule for target.
-main_library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main_library
-.PHONY : main_library
-
-# fast build rule for target.
-main_library/fast:
-	$(MAKE) -f CMakeFiles/main_library.dir/build.make CMakeFiles/main_library.dir/build
-.PHONY : main_library/fast
-
-#=============================================================================
 # Target rules for targets named xmp
 
 # Build rule for target.
@@ -161,6 +148,32 @@ demo_01: cmake_check_build_system
 demo_01/fast:
 	$(MAKE) -f CMakeFiles/demo_01.dir/build.make CMakeFiles/demo_01.dir/build
 .PHONY : demo_01/fast
+
+#=============================================================================
+# Target rules for targets named demo_library
+
+# Build rule for target.
+demo_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_library
+.PHONY : demo_library
+
+# fast build rule for target.
+demo_library/fast:
+	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/build
+.PHONY : demo_library/fast
+
+#=============================================================================
+# Target rules for targets named fuse_library
+
+# Build rule for target.
+fuse_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fuse_library
+.PHONY : fuse_library
+
+# fast build rule for target.
+fuse_library/fast:
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/build
+.PHONY : fuse_library/fast
 
 #=============================================================================
 # Target rules for targets named main
@@ -208,7 +221,7 @@ code/src/demo_02.o: code/src/demo_02.cpp.o
 
 # target to build an object file
 code/src/demo_02.cpp.o:
-	$(MAKE) -f CMakeFiles/main_library.dir/build.make CMakeFiles/main_library.dir/code/src/demo_02.cpp.o
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/demo_02.cpp.o
 .PHONY : code/src/demo_02.cpp.o
 
 code/src/demo_02.i: code/src/demo_02.cpp.i
@@ -217,7 +230,7 @@ code/src/demo_02.i: code/src/demo_02.cpp.i
 
 # target to preprocess a source file
 code/src/demo_02.cpp.i:
-	$(MAKE) -f CMakeFiles/main_library.dir/build.make CMakeFiles/main_library.dir/code/src/demo_02.cpp.i
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/demo_02.cpp.i
 .PHONY : code/src/demo_02.cpp.i
 
 code/src/demo_02.s: code/src/demo_02.cpp.s
@@ -226,7 +239,7 @@ code/src/demo_02.s: code/src/demo_02.cpp.s
 
 # target to generate assembly for a file
 code/src/demo_02.cpp.s:
-	$(MAKE) -f CMakeFiles/main_library.dir/build.make CMakeFiles/main_library.dir/code/src/demo_02.cpp.s
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/demo_02.cpp.s
 .PHONY : code/src/demo_02.cpp.s
 
 code/src/fuse_fun.o: code/src/fuse_fun.c.o
@@ -235,7 +248,7 @@ code/src/fuse_fun.o: code/src/fuse_fun.c.o
 
 # target to build an object file
 code/src/fuse_fun.c.o:
-	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/code/src/fuse_fun.c.o
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/fuse_fun.c.o
 .PHONY : code/src/fuse_fun.c.o
 
 code/src/fuse_fun.i: code/src/fuse_fun.c.i
@@ -244,7 +257,7 @@ code/src/fuse_fun.i: code/src/fuse_fun.c.i
 
 # target to preprocess a source file
 code/src/fuse_fun.c.i:
-	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/code/src/fuse_fun.c.i
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/fuse_fun.c.i
 .PHONY : code/src/fuse_fun.c.i
 
 code/src/fuse_fun.s: code/src/fuse_fun.c.s
@@ -253,7 +266,7 @@ code/src/fuse_fun.s: code/src/fuse_fun.c.s
 
 # target to generate assembly for a file
 code/src/fuse_fun.c.s:
-	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/code/src/fuse_fun.c.s
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/fuse_fun.c.s
 .PHONY : code/src/fuse_fun.c.s
 
 code/src/fuse_test.o: code/src/fuse_test.c.o
@@ -309,6 +322,33 @@ code/src/main.s: code/src/main.c.s
 code/src/main.c.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/code/src/main.c.s
 .PHONY : code/src/main.c.s
+
+code/src/open_txt.o: code/src/open_txt.cpp.o
+
+.PHONY : code/src/open_txt.o
+
+# target to build an object file
+code/src/open_txt.cpp.o:
+	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/code/src/open_txt.cpp.o
+.PHONY : code/src/open_txt.cpp.o
+
+code/src/open_txt.i: code/src/open_txt.cpp.i
+
+.PHONY : code/src/open_txt.i
+
+# target to preprocess a source file
+code/src/open_txt.cpp.i:
+	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/code/src/open_txt.cpp.i
+.PHONY : code/src/open_txt.cpp.i
+
+code/src/open_txt.s: code/src/open_txt.cpp.s
+
+.PHONY : code/src/open_txt.s
+
+# target to generate assembly for a file
+code/src/open_txt.cpp.s:
+	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/code/src/open_txt.cpp.s
+.PHONY : code/src/open_txt.cpp.s
 
 code/src/passthrough_fh.o: code/src/passthrough_fh.c.o
 
@@ -373,9 +413,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fuse_test"
-	@echo "... main_library"
 	@echo "... xmp"
 	@echo "... demo_01"
+	@echo "... demo_library"
+	@echo "... fuse_library"
 	@echo "... main"
 	@echo "... code/src/demo_01.o"
 	@echo "... code/src/demo_01.i"
@@ -392,6 +433,9 @@ help:
 	@echo "... code/src/main.o"
 	@echo "... code/src/main.i"
 	@echo "... code/src/main.s"
+	@echo "... code/src/open_txt.o"
+	@echo "... code/src/open_txt.i"
+	@echo "... code/src/open_txt.s"
 	@echo "... code/src/passthrough_fh.o"
 	@echo "... code/src/passthrough_fh.i"
 	@echo "... code/src/passthrough_fh.s"

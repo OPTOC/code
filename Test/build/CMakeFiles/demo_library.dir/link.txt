@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libdemo_library.a  CMakeFiles/demo_library.dir/code/src/open_txt.cpp.o
+/usr/bin/ranlib ../lib/libdemo_library.a

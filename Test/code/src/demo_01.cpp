@@ -1,11 +1,13 @@
 #include <iostream>
 #include <cassert>
 #include "rocksdb/db.h"
-
+#include "open_txt.h"
 int main() {
+    
     // 指定 RocksDB 存储路径
-    std::string db_path = "/home/zjh/rock";
-
+    // std::string db_path = "/home/zjh/mount/zjh2";
+    std::string db_path;
+    open_txt(db_path);
     // RocksDB 的选项配置
     rocksdb::Options options;
     options.create_if_missing = true;

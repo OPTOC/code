@@ -70,17 +70,32 @@ CMakeFiles/main_library.dir/code/src/demo_02.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_library.dir/code/src/demo_02.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zjh/wz_riscv/github/Test/code/src/demo_02.cpp -o CMakeFiles/main_library.dir/code/src/demo_02.cpp.s
 
+CMakeFiles/main_library.dir/code/src/fuse_fun.c.o: CMakeFiles/main_library.dir/flags.make
+CMakeFiles/main_library.dir/code/src/fuse_fun.c.o: ../code/src/fuse_fun.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main_library.dir/code/src/fuse_fun.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/main_library.dir/code/src/fuse_fun.c.o   -c /home/zjh/wz_riscv/github/Test/code/src/fuse_fun.c
+
+CMakeFiles/main_library.dir/code/src/fuse_fun.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main_library.dir/code/src/fuse_fun.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zjh/wz_riscv/github/Test/code/src/fuse_fun.c > CMakeFiles/main_library.dir/code/src/fuse_fun.c.i
+
+CMakeFiles/main_library.dir/code/src/fuse_fun.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main_library.dir/code/src/fuse_fun.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zjh/wz_riscv/github/Test/code/src/fuse_fun.c -o CMakeFiles/main_library.dir/code/src/fuse_fun.c.s
+
 # Object files for target main_library
 main_library_OBJECTS = \
-"CMakeFiles/main_library.dir/code/src/demo_02.cpp.o"
+"CMakeFiles/main_library.dir/code/src/demo_02.cpp.o" \
+"CMakeFiles/main_library.dir/code/src/fuse_fun.c.o"
 
 # External object files for target main_library
 main_library_EXTERNAL_OBJECTS =
 
 ../lib/libmain_library.a: CMakeFiles/main_library.dir/code/src/demo_02.cpp.o
+../lib/libmain_library.a: CMakeFiles/main_library.dir/code/src/fuse_fun.c.o
 ../lib/libmain_library.a: CMakeFiles/main_library.dir/build.make
 ../lib/libmain_library.a: CMakeFiles/main_library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../lib/libmain_library.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../lib/libmain_library.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/main_library.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main_library.dir/link.txt --verbose=$(VERBOSE)
 

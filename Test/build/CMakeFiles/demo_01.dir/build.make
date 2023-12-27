@@ -79,6 +79,7 @@ demo_01_EXTERNAL_OBJECTS =
 
 ../bin/demo_01: CMakeFiles/demo_01.dir/code/src/demo_01.cpp.o
 ../bin/demo_01: CMakeFiles/demo_01.dir/build.make
+../bin/demo_01: ../lib/libdemo_library.a
 ../bin/demo_01: CMakeFiles/demo_01.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/demo_01"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/demo_01.dir/link.txt --verbose=$(VERBOSE)

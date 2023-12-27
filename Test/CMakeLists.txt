@@ -5,6 +5,11 @@ project(main)
 # set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 # set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+
+#*****************************测试验证部分*************************************#
+set(TEST_CODE_SRC ${CMAKE_SOURCE_DIR}/Test_code/src)
+set(TEST_CODE_INC ${CMAKE_SOURCE_DIR}/Test_code/inc)
+#*****************************正常实现部分*************************************#
 set(CODE_SRC ${CMAKE_SOURCE_DIR}/code/src)
 set(CODE_INC ${CMAKE_SOURCE_DIR}/code/inc)
 # 设置 C++ 标准
@@ -17,17 +22,21 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../lib")#*.so *.dll
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib")#*.a
 set(IFCONFIG 1)#选择链接模式
 
+#******声明全局头文件路径*********#
+# include_directories(${CODE_INC}) 
+# include_directories(${TEST_CODE_INC}) 
+
 if(${IFCONFIG})
 ##链接方式一
 add_executable(main ${CODE_SRC}/main.c ${CODE_SRC}/pr.c)
-include_directories(${CODE_INC}) #指定头文件目录
+target_include_directories(main PRIVATE ${CODE_INC}) #指定头文件目录
 message("这是方式一")
 else()
 ##链接方式二
 add_library(main_library ${CODE_SRC}/pr.c)
 add_executable(main ${CODE_SRC}/main.c)
 target_link_libraries(main ${CODE_SRC}/main_library)
-include_directories(${CODE_INC}) #指定头文件目录
+target_include_directories(main PRIVATE ${CODE_INC}) #指定头文件目录
 message("这是方式二")
 endif()
 # 如果 pr.c 和 pr.h 在不同的目录，你可以使用 include_directories 命令
@@ -37,9 +46,11 @@ endif()
 #这是编译demo_01的
 set(SOURCE_FILES_01 ${CODE_SRC}/demo_01.cpp)
 # 添加可执行文件 01
+add_library(demo_library ${CODE_SRC}/open_txt.cpp)
+target_include_directories(demo_library PRIVATE ${CODE_INC}) 
 add_executable(demo_01 ${SOURCE_FILES_01})
-target_link_libraries(demo_01 PRIVATE rocksdb)
-
+target_link_libraries(demo_01 PRIVATE demo_library rocksdb)
+target_include_directories(demo_01 PRIVATE ${CODE_INC}) 
 ##gcc -Wall passthrough_fh.c `pkg-config fuse3 --cflags --libs` -o xmp
 #编译fuse   #其实可以和上面demo_01类似只不过这种比较详细
 # 添加 FUSE 依赖
@@ -58,17 +69,24 @@ target_include_directories(xmp PRIVATE ${FUSE3_INCLUDE_DIRS})
 
 
 ##混编demo与fuse
- find_package(PkgConfig REQUIRED)
- pkg_search_module(FUSE3 REQUIRED fuse3)#在pkgconfig里面找到fuse3并且改为FUSE3
- set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
- 
- add_library(main_library ${CODE_SRC}/demo_02.cpp)
- add_executable(fuse_test ${CODE_SRC}/fuse_test.c ${CODE_SRC}/fuse_fun.c)
- target_link_libraries(fuse_test PRIVATE main_library ${FUSE3_LIBRARIES} rocksdb)
- target_include_directories(fuse_test PRIVATE ${FUSE3_INCLUDE_DIRS} ${CODE_INC} )
+find_package(PkgConfig REQUIRED)
+pkg_search_module(FUSE3 REQUIRED fuse3)#在pkgconfig里面找到fuse3并且改为FUSE3
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
 
+add_library(fuse_library ${CODE_SRC}/demo_02.cpp ${CODE_SRC}/fuse_fun.c)
+target_include_directories(fuse_library PRIVATE ${CODE_INC})#记得库防止的位置，不然会导致编译不成功
+add_executable(fuse_test ${CODE_SRC}/fuse_test.c )
+target_link_libraries(fuse_test PRIVATE fuse_library ${FUSE3_LIBRARIES} rocksdb )
+target_include_directories(fuse_test PRIVATE ${FUSE3_INCLUDE_DIRS} )
+target_include_directories(fuse_test PRIVATE ${CODE_INC})
 #  set_target_properties(fuse_test PROPERTIES
 #         ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
 #         LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
 #         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
 # )
+
+
+#*****************************测试验证部分*************************************#
+
+# add_executable(open_txt ${TEST_CODE_SRC}/open_txt.cpp )
+# include_directories(${TEST_CODE_INC}) #指定头文件目录

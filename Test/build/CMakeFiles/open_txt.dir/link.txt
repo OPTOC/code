@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/open_txt.dir/Test_code/src/open_txt.cpp.o  -o ../bin/open_txt 

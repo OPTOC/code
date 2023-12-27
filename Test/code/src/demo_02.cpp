@@ -1,6 +1,8 @@
 #include "demo_02.h"
-int rocksdb_Fun(void) {
+
+int rocksdb_Fun(DynamicStringArray *diname) {
     // 指定 RocksDB 存储路径
+    
     std::string db_path = "/home/zjh/rock";
 
     // RocksDB 的选项配置
@@ -20,8 +22,11 @@ int rocksdb_Fun(void) {
 
     // 写入数据
     rocksdb::WriteOptions write_options;
-    status = db->Put(write_options, "key1", "5789");
-    status = db->Put(write_options, "key2", "91011");
+    // status = db->Put(write_options, "key1", "5789");
+    // status = db->Put(write_options, "key2", "91011");
+    for (size_t i = 0; i < diname->size; ++i) {
+        status = db->Put(write_options, (diname->data[i]), (diname->data1[i]));
+    }
     // 检查数据是否成功写入
     assert(status.ok());
     if (!status.ok()) {

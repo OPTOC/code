@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/demo_01.dir/code/src/demo_01.cpp.o  -o ../bin/demo_01  -lrocksdb 
+/usr/bin/c++    -rdynamic CMakeFiles/demo_01.dir/code/src/demo_01.cpp.o  -o ../bin/demo_01  ../lib/libdemo_library.a -lrocksdb 

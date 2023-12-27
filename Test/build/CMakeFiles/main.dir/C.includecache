@@ -6,19 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../code/inc/pr.h
-iostream
--
-
-/home/zjh/wz_riscv/github/Test/code/src/main.c
-pr.h
-/home/zjh/wz_riscv/github/Test/code/src/pr.h
-stdio.h
--
-
-/home/zjh/wz_riscv/github/Test/code/src/pr.c
-stdio.h
--
-pr.h
-/home/zjh/wz_riscv/github/Test/code/src/pr.h
-

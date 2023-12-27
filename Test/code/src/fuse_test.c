@@ -27,17 +27,11 @@
 
 #define _GNU_SOURCE
 
-#include "/usr/local/include/fuse3/fuse.h"
+#include "fuse.h"
 #include "fuse_fun.h"
 const char* content_conut;
 
 
-// char* path_dir(const char *path)
-// {
-// 	static char full_path[PATH_MAX];
-//     sprintf(full_path, "%s%s", root_path, path);//将root_path和path存放到full_path中
-// 	return full_path;
-// }
 static void *xmp_init(struct fuse_conn_info *conn,
 		      struct fuse_config *cfg)
 {
@@ -217,16 +211,23 @@ static int xmp_mknod(const char *path, mode_t mode, dev_t rdev)
 
 static int xmp_mkdir(const char *path, mode_t mode)
 {
-	const char *command = "mkdir";
-    const char *state = "ok!";
-    const char *filename = "/home/zjh/fuss_cis/log.txt";
-
+	// const char *command = "mkdir";
+    // const char *state = "ok!";
+    // const char *filename = "/home/zjh/fuss_cis/log.txt";
+	string_init(String);
+	DynamicStringArray dynamicStringArray;
+	size_t initialCapacity = 5;  // 初始容量
+	String.initializeDynamicStringArray(&dynamicStringArray, initialCapacity);
+	String.appendString(&dynamicStringArray, "大萨达", "我");
+	String.appendString(&dynamicStringArray, "sadsadasd", "我");
+	String.appendString(&dynamicStringArray, "撒大大", "asdasdsa");
+	String.appendString(&dynamicStringArray, "dasdasdasdasdasdasd", "dsadasdasdasd");
 	if (mkdir(path, 0755) == -1) {
         return -errno;
     }
-	rocksdb_Fun();
-	append_to_file( filename, command, path, state, content_conut);
-
+	// rocksdb_Fun();
+	// append_to_file( filename, command, path, state, content_conut);
+	rocksdb_Fun(&dynamicStringArray);
 	return 0;
 }
 
@@ -664,19 +665,20 @@ struct fuse_opt option_spec[] = {
 };
 
 int main(int argc, char *argv[]) {
+	// int fd;
     struct fuse_args args = FUSE_ARGS_INIT(argc, argv);
-	String.print();
+	// String.print();
     // 解析命令行参数
     if (fuse_opt_parse(&args, &opts, option_spec, NULL) == -1) {
         return 1;
-    }
+	}
 	content_conut = opts.subdir_path;
     // 输出解析得到的参数
-    if (opts.subdir_path != NULL) {
-        printf("传进来的 subdir 后面的数据：%s\n", opts.subdir_path);
-    } else {
-        printf("未找到 subdir 参数\n");
-    }
+    // if (opts.subdir_path != NULL) {
+    //     printf("传进来的 subdir 后面的数据：%s\n", opts.subdir_path);
+    // } else {
+    //     printf("未找到 subdir 参数\n");
+    // }
 	if(fuse_main(argc, argv, &xmp_oper, NULL))//fuse的入口函数
 		printf("yes init!");
 	return 0;

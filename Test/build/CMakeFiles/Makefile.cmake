@@ -49,8 +49,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/fuse_test.dir/DependInfo.cmake"
-  "CMakeFiles/main_library.dir/DependInfo.cmake"
   "CMakeFiles/xmp.dir/DependInfo.cmake"
   "CMakeFiles/demo_01.dir/DependInfo.cmake"
+  "CMakeFiles/demo_library.dir/DependInfo.cmake"
+  "CMakeFiles/fuse_library.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
   )

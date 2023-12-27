@@ -1,7 +1,8 @@
 /home/zjh/wz_riscv/github/Test/build/CMakeFiles/rebuild_cache.dir
 /home/zjh/wz_riscv/github/Test/build/CMakeFiles/edit_cache.dir
 /home/zjh/wz_riscv/github/Test/build/CMakeFiles/fuse_test.dir
-/home/zjh/wz_riscv/github/Test/build/CMakeFiles/main_library.dir
 /home/zjh/wz_riscv/github/Test/build/CMakeFiles/xmp.dir
 /home/zjh/wz_riscv/github/Test/build/CMakeFiles/demo_01.dir
+/home/zjh/wz_riscv/github/Test/build/CMakeFiles/demo_library.dir
+/home/zjh/wz_riscv/github/Test/build/CMakeFiles/fuse_library.dir
 /home/zjh/wz_riscv/github/Test/build/CMakeFiles/main.dir

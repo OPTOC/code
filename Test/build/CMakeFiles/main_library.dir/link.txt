@@ -1,2 +1,2 @@
-/usr/bin/ar qc ../lib/libmain_library.a  CMakeFiles/main_library.dir/code/src/demo_02.cpp.o
+/usr/bin/ar qc ../lib/libmain_library.a  CMakeFiles/main_library.dir/code/src/demo_02.cpp.o CMakeFiles/main_library.dir/code/src/fuse_fun.c.o
 /usr/bin/ranlib ../lib/libmain_library.a

@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named thread
+
+# Build rule for target.
+thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thread
+.PHONY : thread
+
+# fast build rule for target.
+thread/fast:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
+.PHONY : thread/fast
+
+#=============================================================================
+# Target rules for targets named ergodic_old
+
+# Build rule for target.
+ergodic_old: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ergodic_old
+.PHONY : ergodic_old
+
+# fast build rule for target.
+ergodic_old/fast:
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/build
+.PHONY : ergodic_old/fast
+
+#=============================================================================
+# Target rules for targets named c
+
+# Build rule for target.
+c : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 c
+.PHONY : c
+
+# fast build rule for target.
+c/fast:
+	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/build
+.PHONY : c/fast
+
+#=============================================================================
 # Target rules for targets named fuse_test
 
 # Build rule for target.
@@ -124,6 +163,19 @@ fuse_test/fast:
 .PHONY : fuse_test/fast
 
 #=============================================================================
+# Target rules for targets named ceshi
+
+# Build rule for target.
+ceshi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceshi
+.PHONY : ceshi
+
+# fast build rule for target.
+ceshi/fast:
+	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/build
+.PHONY : ceshi/fast
+
+#=============================================================================
 # Target rules for targets named xmp
 
 # Build rule for target.
@@ -135,6 +187,19 @@ xmp: cmake_check_build_system
 xmp/fast:
 	$(MAKE) -f CMakeFiles/xmp.dir/build.make CMakeFiles/xmp.dir/build
 .PHONY : xmp/fast
+
+#=============================================================================
+# Target rules for targets named ergodic
+
+# Build rule for target.
+ergodic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ergodic
+.PHONY : ergodic
+
+# fast build rule for target.
+ergodic/fast:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/build
+.PHONY : ergodic/fast
 
 #=============================================================================
 # Target rules for targets named demo_01
@@ -187,6 +252,141 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+Test_code/src/c.o: Test_code/src/c.c.o
+
+.PHONY : Test_code/src/c.o
+
+# target to build an object file
+Test_code/src/c.c.o:
+	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/Test_code/src/c.c.o
+.PHONY : Test_code/src/c.c.o
+
+Test_code/src/c.i: Test_code/src/c.c.i
+
+.PHONY : Test_code/src/c.i
+
+# target to preprocess a source file
+Test_code/src/c.c.i:
+	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/Test_code/src/c.c.i
+.PHONY : Test_code/src/c.c.i
+
+Test_code/src/c.s: Test_code/src/c.c.s
+
+.PHONY : Test_code/src/c.s
+
+# target to generate assembly for a file
+Test_code/src/c.c.s:
+	$(MAKE) -f CMakeFiles/c.dir/build.make CMakeFiles/c.dir/Test_code/src/c.c.s
+.PHONY : Test_code/src/c.c.s
+
+Test_code/src/ceshi.o: Test_code/src/ceshi.c.o
+
+.PHONY : Test_code/src/ceshi.o
+
+# target to build an object file
+Test_code/src/ceshi.c.o:
+	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/Test_code/src/ceshi.c.o
+.PHONY : Test_code/src/ceshi.c.o
+
+Test_code/src/ceshi.i: Test_code/src/ceshi.c.i
+
+.PHONY : Test_code/src/ceshi.i
+
+# target to preprocess a source file
+Test_code/src/ceshi.c.i:
+	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/Test_code/src/ceshi.c.i
+.PHONY : Test_code/src/ceshi.c.i
+
+Test_code/src/ceshi.s: Test_code/src/ceshi.c.s
+
+.PHONY : Test_code/src/ceshi.s
+
+# target to generate assembly for a file
+Test_code/src/ceshi.c.s:
+	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/Test_code/src/ceshi.c.s
+.PHONY : Test_code/src/ceshi.c.s
+
+Test_code/src/ergodic.o: Test_code/src/ergodic.c.o
+
+.PHONY : Test_code/src/ergodic.o
+
+# target to build an object file
+Test_code/src/ergodic.c.o:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/Test_code/src/ergodic.c.o
+.PHONY : Test_code/src/ergodic.c.o
+
+Test_code/src/ergodic.i: Test_code/src/ergodic.c.i
+
+.PHONY : Test_code/src/ergodic.i
+
+# target to preprocess a source file
+Test_code/src/ergodic.c.i:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/Test_code/src/ergodic.c.i
+.PHONY : Test_code/src/ergodic.c.i
+
+Test_code/src/ergodic.s: Test_code/src/ergodic.c.s
+
+.PHONY : Test_code/src/ergodic.s
+
+# target to generate assembly for a file
+Test_code/src/ergodic.c.s:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/Test_code/src/ergodic.c.s
+.PHONY : Test_code/src/ergodic.c.s
+
+Test_code/src/ergodic_old.o: Test_code/src/ergodic_old.c.o
+
+.PHONY : Test_code/src/ergodic_old.o
+
+# target to build an object file
+Test_code/src/ergodic_old.c.o:
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.o
+.PHONY : Test_code/src/ergodic_old.c.o
+
+Test_code/src/ergodic_old.i: Test_code/src/ergodic_old.c.i
+
+.PHONY : Test_code/src/ergodic_old.i
+
+# target to preprocess a source file
+Test_code/src/ergodic_old.c.i:
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.i
+.PHONY : Test_code/src/ergodic_old.c.i
+
+Test_code/src/ergodic_old.s: Test_code/src/ergodic_old.c.s
+
+.PHONY : Test_code/src/ergodic_old.s
+
+# target to generate assembly for a file
+Test_code/src/ergodic_old.c.s:
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.s
+.PHONY : Test_code/src/ergodic_old.c.s
+
+Test_code/src/thread.o: Test_code/src/thread.cpp.o
+
+.PHONY : Test_code/src/thread.o
+
+# target to build an object file
+Test_code/src/thread.cpp.o:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/Test_code/src/thread.cpp.o
+.PHONY : Test_code/src/thread.cpp.o
+
+Test_code/src/thread.i: Test_code/src/thread.cpp.i
+
+.PHONY : Test_code/src/thread.i
+
+# target to preprocess a source file
+Test_code/src/thread.cpp.i:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/Test_code/src/thread.cpp.i
+.PHONY : Test_code/src/thread.cpp.i
+
+Test_code/src/thread.s: Test_code/src/thread.cpp.s
+
+.PHONY : Test_code/src/thread.s
+
+# target to generate assembly for a file
+Test_code/src/thread.cpp.s:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/Test_code/src/thread.cpp.s
+.PHONY : Test_code/src/thread.cpp.s
 
 code/src/demo_01.o: code/src/demo_01.cpp.o
 
@@ -412,12 +612,32 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... thread"
+	@echo "... ergodic_old"
+	@echo "... c"
 	@echo "... fuse_test"
+	@echo "... ceshi"
 	@echo "... xmp"
+	@echo "... ergodic"
 	@echo "... demo_01"
 	@echo "... demo_library"
 	@echo "... fuse_library"
 	@echo "... main"
+	@echo "... Test_code/src/c.o"
+	@echo "... Test_code/src/c.i"
+	@echo "... Test_code/src/c.s"
+	@echo "... Test_code/src/ceshi.o"
+	@echo "... Test_code/src/ceshi.i"
+	@echo "... Test_code/src/ceshi.s"
+	@echo "... Test_code/src/ergodic.o"
+	@echo "... Test_code/src/ergodic.i"
+	@echo "... Test_code/src/ergodic.s"
+	@echo "... Test_code/src/ergodic_old.o"
+	@echo "... Test_code/src/ergodic_old.i"
+	@echo "... Test_code/src/ergodic_old.s"
+	@echo "... Test_code/src/thread.o"
+	@echo "... Test_code/src/thread.i"
+	@echo "... Test_code/src/thread.s"
 	@echo "... code/src/demo_01.o"
 	@echo "... code/src/demo_01.i"
 	@echo "... code/src/demo_01.s"

@@ -21,14 +21,21 @@
 typedef struct {
     char **data;     // 指向字符串数组的指针
     char **data1; 
+    char* value_new;
+    char* value1_new;
     size_t size;      // 数组当前的元素个数
     size_t capacity;  // 数组当前分配的内存空间大小
 } DynamicStringArray;
+// typedef struct {
+//     char** value_new;
+//     char** value1_new;
+// } Dumchar;
 
 struct string_fun { /********************这种是在定义接口********************/
 	void (*appendString)(DynamicStringArray *array, const char *value, const char *value1);
 	void (*freeDynamicStringArray)(DynamicStringArray *array);
     void (*initializeDynamicStringArray)(DynamicStringArray *array, size_t initialCapacity);
+    void (*refundString)(DynamicStringArray *array);
     void (*print)(void);
 }; 
 //初始化动态数组
@@ -37,7 +44,8 @@ void initializeDynamicStringArray(DynamicStringArray *array, size_t initialCapac
 void appendString(DynamicStringArray *array, const char *value, const char *value1);
 //清除库
 void freeDynamicStringArray(DynamicStringArray *array);
-
+//退数组
+void refundString(DynamicStringArray *array);
 int append_to_file(const char *filename, const char *command,const char *path,const char *state, const char* content_conut);
 void print(void);
 
@@ -47,6 +55,7 @@ void print(void);
     .appendString = appendString, \
     .freeDynamicStringArray = freeDynamicStringArray, \
     .initializeDynamicStringArray = initializeDynamicStringArray, \
+    .refundString = refundString, \
     .print = print \
   }
 

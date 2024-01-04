@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wall  -rdynamic CMakeFiles/c.dir/Test_code/src/c.c.o  -o ../bin/Test/c 

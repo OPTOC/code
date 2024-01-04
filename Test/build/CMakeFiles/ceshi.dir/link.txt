@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wall  -rdynamic CMakeFiles/ceshi.dir/Test_code/src/ceshi.c.o  -o ../bin/Test/ceshi 

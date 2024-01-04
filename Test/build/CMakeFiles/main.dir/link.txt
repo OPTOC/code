@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wall -Wall  -rdynamic CMakeFiles/main.dir/code/src/main.c.o CMakeFiles/main.dir/code/src/pr.c.o  -o ../bin/main 
+/usr/bin/cc  -Wall -Wall  -rdynamic CMakeFiles/main.dir/code/src/main.c.o CMakeFiles/main.dir/code/src/pr.c.o  -o ../bin/New/main 

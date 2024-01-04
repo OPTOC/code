@@ -5,9 +5,10 @@
 int main() {
     
     // 指定 RocksDB 存储路径
-    // std::string db_path = "/home/zjh/mount/zjh2";
-    std::string db_path;
-    open_txt(db_path);
+    std::string db_path = "/home/zjh/rock";
+    // std::string txt_path = "/home/zjh/mount/zjh2";
+    // std::string db_path;
+    // open_txt(db_path );
     // RocksDB 的选项配置
     rocksdb::Options options;
     options.create_if_missing = true;
@@ -24,9 +25,15 @@ int main() {
     }
 
     // 写入数据
-    rocksdb::WriteOptions write_options;
-    status = db->Put(write_options, "key1", "123456zjh");
-    status = db->Put(write_options, "key2", "34567");
+    // rocksdb::WriteOptions write_options;
+    //写入方法一  较慢
+    // status = db->Put(write_options, "key1", "123456zjh");
+    // status = db->Put(write_options, "key2", "34567");
+    rocksdb::WriteBatch write_options;
+    write_options.Put("key1", "我是好人");
+    write_options.Put("key2", "我是坏人");
+    write_options.Put("key3", "我是直立人");
+    db->Write(rocksdb::WriteOptions(), &write_options);
     // 检查数据是否成功写入
     assert(status.ok());
     if (!status.ok()) {

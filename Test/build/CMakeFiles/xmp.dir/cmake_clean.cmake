@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../bin/xmp"
-  "../bin/xmp.pdb"
+  "../bin/New/xmp"
+  "../bin/New/xmp.pdb"
   "CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o"
 )
 

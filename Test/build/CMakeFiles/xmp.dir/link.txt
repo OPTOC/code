@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wall -Wall  -rdynamic CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o  -o ../bin/xmp  -lfuse3 -lpthread 
+/usr/bin/cc  -Wall -Wall  -rdynamic CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o  -o ../bin/New/xmp  -lfuse3 -lpthread 

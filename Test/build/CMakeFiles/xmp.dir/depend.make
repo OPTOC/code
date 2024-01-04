@@ -6,4 +6,5 @@ CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o: /usr/local/include/fuse3/fuse.h
 CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o: /usr/local/include/fuse3/fuse_common.h
 CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o: /usr/local/include/fuse3/fuse_log.h
 CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o: /usr/local/include/fuse3/fuse_opt.h
+CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o: /usr/local/include/fuse3/libfuse_config.h
 

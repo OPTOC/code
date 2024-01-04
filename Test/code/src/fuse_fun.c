@@ -18,17 +18,30 @@ void appendString(DynamicStringArray *array, const char *value, const char *valu
     }
 
     // 在数组末尾添加新字符串
-    array->data[size_old] = strdup(value);
+    array->data[size_old]  = strdup(value);
     array->data1[size_old] = strdup(value1);
+}
+// // 添加字符串到动态字符串数组
+void refundString(DynamicStringArray *array) {
+    array->size = array->size - 1;
+    // 如果数组满了，扩展内存
+    // if (array->size == array->capacity) {
+    //     array->capacity *= 2;  // 可根据需要调整扩展策略
+        // array->value_new = (char **)realloc(array->data, array->capacity * sizeof(char*));
+    //     array->data1 = (char **)realloc(array->data1, array->capacity * sizeof(char*));
+    // }
+    // 在数组末尾添加新字符串
+   array->value_new = array->data[array->size];
+   array->value1_new = array->data1[array->size];
 }
 // 释放动态字符串数组的内存
 void freeDynamicStringArray(DynamicStringArray *array) {
     for (size_t i = 0; i < array->size; ++i) {
         free(array->data[i]);  // 释放每个字符串的内存
-        // free(array->data1[i]); 
+        free(array->data1[i]); 
     }
     free(array->data);
-    // free(array->data1);
+    free(array->data1);
     array->data = NULL;
     array->data1 = NULL;
     array->size = 0;
@@ -84,6 +97,10 @@ void print(void)
 //         printf("%s ", dynamicStringArray.data1[i]);
 //     }
 //     printf("\n");
+//     String.refundString(&dynamicStringArray);
+//     String.refundString(&dynamicStringArray);
+//     String.refundString(&dynamicStringArray);
+//     printf("%s     %s     %ld\n",dynamicStringArray.value_new, dynamicStringArray.value1_new, dynamicStringArray.size);
 //     // 释放动态字符串数组的内存
 //     String.freeDynamicStringArray(&dynamicStringArray);
 //     return 0;

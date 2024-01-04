@@ -12,6 +12,7 @@ set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/local/include/fuse3"
   "../code/inc"
+  "../Test_code/inc"
   )
 
 # Targets to which this target links.

@@ -1,0 +1,3 @@
+#!/bin/sh
+./fuse_test /home/zjh/WZ_mount_ceshi/ -o modules=subdir,subdir=/home/zjh/fuse_fuse -d
+

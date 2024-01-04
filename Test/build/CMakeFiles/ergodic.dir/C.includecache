@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Test_code/inc/ergodic.h
+stdio.h
+-
+stdlib.h
+-
+dirent.h
+-
+sys/stat.h
+-
+string.h
+-
+
+/home/zjh/wz_riscv/github/Test/Test_code/src/ergodic.c
+ergodic.h
+/home/zjh/wz_riscv/github/Test/Test_code/src/ergodic.h
+

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zjh/wz_riscv/github/Test/Test_code/src/ceshi.c
+stdio.h
+-
+stdlib.h
+-
+dirent.h
+-
+string.h
+-
+

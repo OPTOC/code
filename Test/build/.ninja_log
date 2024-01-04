@@ -1,0 +1,21 @@
+# ninja log v5
+9	132	1703751772734777764	CMakeFiles/main.dir/code/src/main.c.o	196d3092afe4e768
+1	160	1703751772766775055	CMakeFiles/ergodic.dir/Test_code/src/ergodic.c.o	8735c5b621981770
+0	181	1703751772790773022	CMakeFiles/fuse_test.dir/code/src/fuse_test.c.o	70944390f71eecd3
+7	185	1703751772790773022	CMakeFiles/fuse_library.dir/code/src/fuse_fun.c.o	d1c0ba4d5384f7d7
+10	268	1703751772874765908	CMakeFiles/main.dir/code/src/pr.c.o	357c24a87caa0b1b
+0	292	1703751772894764214	CMakeFiles/xmp.dir/code/src/passthrough_fh.c.o	5a2734765fcdc862
+160	309	1703751772914762520	../bin/ergodic	5d40370cafeaaf68
+268	361	1703751772966758117	../bin/main	9d9592d769cc1773
+292	380	1703751772986756424	../bin/xmp	cbf87d95ff1eb47d
+4	1482	1703751773606704005	CMakeFiles/demo_library.dir/code/src/open_txt.cpp.o	14a4bb71cada1f23
+0	1568	1703751773726693861	CMakeFiles/thread.dir/Test_code/src/thread.cpp.o	a9a131c84f4c5a0d
+1482	1568	1703751774118660738	../lib/libdemo_library.a	65e8e9129bcf6ce0
+1568	1682	1703751774286646560	../bin/thread	142098acfabe75f5
+4	2164	1703751774770605713	CMakeFiles/fuse_library.dir/code/src/demo_02.cpp.o	6e329734563185a7
+2164	2199	1703751774806602674	../lib/libfuse_library.a	be5a51793994d64d
+2199	2430	1703751775034583437	../bin/fuse_test	db0cee5a470269ea
+1	2769	1703751775374554793	CMakeFiles/demo_01.dir/code/src/demo_01.cpp.o	158af00e5f251923
+2769	2982	1703751775586536931	../bin/demo_01	b557ec5e75a3c28f
+2	59	1703751960613160560	CMakeFiles/ergodic.dir/Test_code/src/ergodic.c.o	8735c5b621981770
+60	96	1703751960649158337	../bin/ergodic	5d40370cafeaaf68

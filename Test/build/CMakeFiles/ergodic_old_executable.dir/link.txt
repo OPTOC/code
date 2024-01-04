@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wall  -rdynamic CMakeFiles/ergodic_old_executable.dir/Test_code/src/ergodic_old.c.o  -o ../bin/Test/ergodic_old_executable 

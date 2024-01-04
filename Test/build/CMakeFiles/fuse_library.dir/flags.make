@@ -7,11 +7,11 @@ C_FLAGS =  -Wall -Wall
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/zjh/wz_riscv/github/Test/code/inc 
+C_INCLUDES = -I/home/zjh/wz_riscv/github/Test/code/inc -I/home/zjh/wz_riscv/github/Test/Test_code/inc 
 
 CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/zjh/wz_riscv/github/Test/code/inc 
+CXX_INCLUDES = -I/home/zjh/wz_riscv/github/Test/code/inc -I/home/zjh/wz_riscv/github/Test/Test_code/inc 
 

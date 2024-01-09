@@ -54,7 +54,7 @@ int main() {
     } else {
         std::cerr << "Error reading from RocksDB: " << status.ToString() << std::endl;
     }
-    status = db->Get(read_options, "key2", &value);
+    status = db->Get(read_options, "存入最终大小", &value);
     // 检查数据是否成功读取
     assert(status.ok());
     if (status.ok()) {
@@ -64,11 +64,11 @@ int main() {
     }
 
     // 使用 RocksDB 迭代器遍历数据库中的所有键值对
-    rocksdb::Iterator* it = db->NewIterator(read_options);
-    for (it->SeekToFirst(); it->Valid(); it->Next()) {
-        std::cout << "Key: " << it->key().ToString() << ", Value: " << it->value().ToString() << std::endl;
-    }
-    delete it;
+    // rocksdb::Iterator* it = db->NewIterator(read_options);
+    // for (it->SeekToFirst(); it->Valid(); it->Next()) {
+    //     std::cout << "Key: " << it->key().ToString() << ", Value: " << it->value().ToString() << std::endl;
+    // }
+    // delete it;
 
     // 关闭 RocksDB 数据库
     delete db;

@@ -6,3 +6,19 @@
 
 #IncludeRegexTransform: 
 
+../code/inc/open_txt.h
+iostream
+-
+fstream
+-
+string
+-
+filesystem
+-
+unistd.h
+-
+
+/home/zjh/wz_riscv/github/Test/code/src/open_txt.cpp
+open_txt.h
+/home/zjh/wz_riscv/github/Test/code/src/open_txt.h
+

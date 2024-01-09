@@ -6,5 +6,5 @@ C_FLAGS =  -Wall -Wall
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/zjh/wz_riscv/github/Test/Test_code/inc 
+C_INCLUDES = -I/home/zjh/wz_riscv/github/Test/code/inc -I/home/zjh/wz_riscv/github/Test/Test_code/inc 
 

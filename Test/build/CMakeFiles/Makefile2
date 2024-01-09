@@ -53,17 +53,18 @@ CMAKE_BINARY_DIR = /home/zjh/wz_riscv/github/Test/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/thread.dir/all
+all: CMakeFiles/main.dir/all
+all: CMakeFiles/fuse_library.dir/all
+all: CMakeFiles/demo_library.dir/all
+all: CMakeFiles/demo_01.dir/all
+all: CMakeFiles/ergodic.dir/all
+all: CMakeFiles/demo_03_library.dir/all
+all: CMakeFiles/ceshi.dir/all
+all: CMakeFiles/fuse_test.dir/all
+all: CMakeFiles/xmp.dir/all
 all: CMakeFiles/ergodic_old.dir/all
 all: CMakeFiles/c.dir/all
-all: CMakeFiles/fuse_test.dir/all
-all: CMakeFiles/ceshi.dir/all
-all: CMakeFiles/xmp.dir/all
-all: CMakeFiles/ergodic.dir/all
-all: CMakeFiles/demo_01.dir/all
-all: CMakeFiles/demo_library.dir/all
-all: CMakeFiles/fuse_library.dir/all
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/thread.dir/all
 
 .PHONY : all
 
@@ -73,60 +74,277 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/thread.dir/clean
+clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/fuse_library.dir/clean
+clean: CMakeFiles/demo_library.dir/clean
+clean: CMakeFiles/demo_01.dir/clean
+clean: CMakeFiles/ergodic.dir/clean
+clean: CMakeFiles/demo_03_library.dir/clean
+clean: CMakeFiles/ceshi.dir/clean
+clean: CMakeFiles/fuse_test.dir/clean
+clean: CMakeFiles/xmp.dir/clean
 clean: CMakeFiles/ergodic_old.dir/clean
 clean: CMakeFiles/c.dir/clean
-clean: CMakeFiles/fuse_test.dir/clean
-clean: CMakeFiles/ceshi.dir/clean
-clean: CMakeFiles/xmp.dir/clean
-clean: CMakeFiles/ergodic.dir/clean
-clean: CMakeFiles/demo_01.dir/clean
-clean: CMakeFiles/demo_library.dir/clean
-clean: CMakeFiles/fuse_library.dir/clean
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/thread.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/thread.dir
+# Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/thread.dir/all:
-	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/depend
-	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=21,22 "Built target thread"
-.PHONY : CMakeFiles/thread.dir/all
+CMakeFiles/main.dir/all:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=21,22,23 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/thread.dir/all
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/thread.dir/rule
+.PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-thread: CMakeFiles/thread.dir/rule
+main: CMakeFiles/main.dir/rule
 
-.PHONY : thread
+.PHONY : main
 
 # clean rule for target.
-CMakeFiles/thread.dir/clean:
-	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/clean
-.PHONY : CMakeFiles/thread.dir/clean
+CMakeFiles/main.dir/clean:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/fuse_library.dir
+
+# All Build rule for target.
+CMakeFiles/fuse_library.dir/all:
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/depend
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=16,17,18 "Built target fuse_library"
+.PHONY : CMakeFiles/fuse_library.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fuse_library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fuse_library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
+.PHONY : CMakeFiles/fuse_library.dir/rule
+
+# Convenience name for target.
+fuse_library: CMakeFiles/fuse_library.dir/rule
+
+.PHONY : fuse_library
+
+# clean rule for target.
+CMakeFiles/fuse_library.dir/clean:
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/clean
+.PHONY : CMakeFiles/fuse_library.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/demo_library.dir
+
+# All Build rule for target.
+CMakeFiles/demo_library.dir/all:
+	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/depend
+	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=9,10 "Built target demo_library"
+.PHONY : CMakeFiles/demo_library.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/demo_library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo_library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
+.PHONY : CMakeFiles/demo_library.dir/rule
+
+# Convenience name for target.
+demo_library: CMakeFiles/demo_library.dir/rule
+
+.PHONY : demo_library
+
+# clean rule for target.
+CMakeFiles/demo_library.dir/clean:
+	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/clean
+.PHONY : CMakeFiles/demo_library.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/demo_01.dir
+
+# All Build rule for target.
+CMakeFiles/demo_01.dir/all: CMakeFiles/demo_library.dir/all
+	$(MAKE) -f CMakeFiles/demo_01.dir/build.make CMakeFiles/demo_01.dir/depend
+	$(MAKE) -f CMakeFiles/demo_01.dir/build.make CMakeFiles/demo_01.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=5,6 "Built target demo_01"
+.PHONY : CMakeFiles/demo_01.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/demo_01.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo_01.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
+.PHONY : CMakeFiles/demo_01.dir/rule
+
+# Convenience name for target.
+demo_01: CMakeFiles/demo_01.dir/rule
+
+.PHONY : demo_01
+
+# clean rule for target.
+CMakeFiles/demo_01.dir/clean:
+	$(MAKE) -f CMakeFiles/demo_01.dir/build.make CMakeFiles/demo_01.dir/clean
+.PHONY : CMakeFiles/demo_01.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ergodic.dir
+
+# All Build rule for target.
+CMakeFiles/ergodic.dir/all:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/depend
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=11,12 "Built target ergodic"
+.PHONY : CMakeFiles/ergodic.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ergodic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ergodic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
+.PHONY : CMakeFiles/ergodic.dir/rule
+
+# Convenience name for target.
+ergodic: CMakeFiles/ergodic.dir/rule
+
+.PHONY : ergodic
+
+# clean rule for target.
+CMakeFiles/ergodic.dir/clean:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/clean
+.PHONY : CMakeFiles/ergodic.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/demo_03_library.dir
+
+# All Build rule for target.
+CMakeFiles/demo_03_library.dir/all:
+	$(MAKE) -f CMakeFiles/demo_03_library.dir/build.make CMakeFiles/demo_03_library.dir/depend
+	$(MAKE) -f CMakeFiles/demo_03_library.dir/build.make CMakeFiles/demo_03_library.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=7,8 "Built target demo_03_library"
+.PHONY : CMakeFiles/demo_03_library.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/demo_03_library.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo_03_library.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
+.PHONY : CMakeFiles/demo_03_library.dir/rule
+
+# Convenience name for target.
+demo_03_library: CMakeFiles/demo_03_library.dir/rule
+
+.PHONY : demo_03_library
+
+# clean rule for target.
+CMakeFiles/demo_03_library.dir/clean:
+	$(MAKE) -f CMakeFiles/demo_03_library.dir/build.make CMakeFiles/demo_03_library.dir/clean
+.PHONY : CMakeFiles/demo_03_library.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ceshi.dir
+
+# All Build rule for target.
+CMakeFiles/ceshi.dir/all:
+	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/depend
+	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=3,4 "Built target ceshi"
+.PHONY : CMakeFiles/ceshi.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ceshi.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ceshi.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
+.PHONY : CMakeFiles/ceshi.dir/rule
+
+# Convenience name for target.
+ceshi: CMakeFiles/ceshi.dir/rule
+
+.PHONY : ceshi
+
+# clean rule for target.
+CMakeFiles/ceshi.dir/clean:
+	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/clean
+.PHONY : CMakeFiles/ceshi.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/fuse_test.dir
+
+# All Build rule for target.
+CMakeFiles/fuse_test.dir/all: CMakeFiles/fuse_library.dir/all
+	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/depend
+	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=19,20 "Built target fuse_test"
+.PHONY : CMakeFiles/fuse_test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fuse_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fuse_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
+.PHONY : CMakeFiles/fuse_test.dir/rule
+
+# Convenience name for target.
+fuse_test: CMakeFiles/fuse_test.dir/rule
+
+.PHONY : fuse_test
+
+# clean rule for target.
+CMakeFiles/fuse_test.dir/clean:
+	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/clean
+.PHONY : CMakeFiles/fuse_test.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/xmp.dir
+
+# All Build rule for target.
+CMakeFiles/xmp.dir/all:
+	$(MAKE) -f CMakeFiles/xmp.dir/build.make CMakeFiles/xmp.dir/depend
+	$(MAKE) -f CMakeFiles/xmp.dir/build.make CMakeFiles/xmp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=26,27 "Built target xmp"
+.PHONY : CMakeFiles/xmp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/xmp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/xmp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
+.PHONY : CMakeFiles/xmp.dir/rule
+
+# Convenience name for target.
+xmp: CMakeFiles/xmp.dir/rule
+
+.PHONY : xmp
+
+# clean rule for target.
+CMakeFiles/xmp.dir/clean:
+	$(MAKE) -f CMakeFiles/xmp.dir/build.make CMakeFiles/xmp.dir/clean
+.PHONY : CMakeFiles/xmp.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ergodic_old.dir
 
 # All Build rule for target.
-CMakeFiles/ergodic_old.dir/all:
+CMakeFiles/ergodic_old.dir/all: CMakeFiles/demo_03_library.dir/all
 	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/depend
 	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=11,12 "Built target ergodic_old"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=13,14,15 "Built target ergodic_old"
 .PHONY : CMakeFiles/ergodic_old.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ergodic_old.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ergodic_old.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
 .PHONY : CMakeFiles/ergodic_old.dir/rule
@@ -169,220 +387,31 @@ CMakeFiles/c.dir/clean:
 .PHONY : CMakeFiles/c.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/fuse_test.dir
+# Target rules for target CMakeFiles/thread.dir
 
 # All Build rule for target.
-CMakeFiles/fuse_test.dir/all: CMakeFiles/fuse_library.dir/all
-	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/depend
-	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=16,17 "Built target fuse_test"
-.PHONY : CMakeFiles/fuse_test.dir/all
+CMakeFiles/thread.dir/all:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/depend
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=24,25 "Built target thread"
+.PHONY : CMakeFiles/thread.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/fuse_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fuse_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/fuse_test.dir/rule
-
-# Convenience name for target.
-fuse_test: CMakeFiles/fuse_test.dir/rule
-
-.PHONY : fuse_test
-
-# clean rule for target.
-CMakeFiles/fuse_test.dir/clean:
-	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/clean
-.PHONY : CMakeFiles/fuse_test.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ceshi.dir
-
-# All Build rule for target.
-CMakeFiles/ceshi.dir/all:
-	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/depend
-	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=3,4 "Built target ceshi"
-.PHONY : CMakeFiles/ceshi.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ceshi.dir/rule: cmake_check_build_system
+CMakeFiles/thread.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ceshi.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/thread.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/ceshi.dir/rule
+.PHONY : CMakeFiles/thread.dir/rule
 
 # Convenience name for target.
-ceshi: CMakeFiles/ceshi.dir/rule
+thread: CMakeFiles/thread.dir/rule
 
-.PHONY : ceshi
-
-# clean rule for target.
-CMakeFiles/ceshi.dir/clean:
-	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/clean
-.PHONY : CMakeFiles/ceshi.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/xmp.dir
-
-# All Build rule for target.
-CMakeFiles/xmp.dir/all:
-	$(MAKE) -f CMakeFiles/xmp.dir/build.make CMakeFiles/xmp.dir/depend
-	$(MAKE) -f CMakeFiles/xmp.dir/build.make CMakeFiles/xmp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=23,24 "Built target xmp"
-.PHONY : CMakeFiles/xmp.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/xmp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/xmp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/xmp.dir/rule
-
-# Convenience name for target.
-xmp: CMakeFiles/xmp.dir/rule
-
-.PHONY : xmp
+.PHONY : thread
 
 # clean rule for target.
-CMakeFiles/xmp.dir/clean:
-	$(MAKE) -f CMakeFiles/xmp.dir/build.make CMakeFiles/xmp.dir/clean
-.PHONY : CMakeFiles/xmp.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ergodic.dir
-
-# All Build rule for target.
-CMakeFiles/ergodic.dir/all:
-	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/depend
-	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=9,10 "Built target ergodic"
-.PHONY : CMakeFiles/ergodic.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ergodic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ergodic.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/ergodic.dir/rule
-
-# Convenience name for target.
-ergodic: CMakeFiles/ergodic.dir/rule
-
-.PHONY : ergodic
-
-# clean rule for target.
-CMakeFiles/ergodic.dir/clean:
-	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/clean
-.PHONY : CMakeFiles/ergodic.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/demo_01.dir
-
-# All Build rule for target.
-CMakeFiles/demo_01.dir/all: CMakeFiles/demo_library.dir/all
-	$(MAKE) -f CMakeFiles/demo_01.dir/build.make CMakeFiles/demo_01.dir/depend
-	$(MAKE) -f CMakeFiles/demo_01.dir/build.make CMakeFiles/demo_01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=5,6 "Built target demo_01"
-.PHONY : CMakeFiles/demo_01.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/demo_01.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo_01.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/demo_01.dir/rule
-
-# Convenience name for target.
-demo_01: CMakeFiles/demo_01.dir/rule
-
-.PHONY : demo_01
-
-# clean rule for target.
-CMakeFiles/demo_01.dir/clean:
-	$(MAKE) -f CMakeFiles/demo_01.dir/build.make CMakeFiles/demo_01.dir/clean
-.PHONY : CMakeFiles/demo_01.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/demo_library.dir
-
-# All Build rule for target.
-CMakeFiles/demo_library.dir/all:
-	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/depend
-	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=7,8 "Built target demo_library"
-.PHONY : CMakeFiles/demo_library.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/demo_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo_library.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/demo_library.dir/rule
-
-# Convenience name for target.
-demo_library: CMakeFiles/demo_library.dir/rule
-
-.PHONY : demo_library
-
-# clean rule for target.
-CMakeFiles/demo_library.dir/clean:
-	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/clean
-.PHONY : CMakeFiles/demo_library.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/fuse_library.dir
-
-# All Build rule for target.
-CMakeFiles/fuse_library.dir/all:
-	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/depend
-	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=13,14,15 "Built target fuse_library"
-.PHONY : CMakeFiles/fuse_library.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/fuse_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/fuse_library.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/fuse_library.dir/rule
-
-# Convenience name for target.
-fuse_library: CMakeFiles/fuse_library.dir/rule
-
-.PHONY : fuse_library
-
-# clean rule for target.
-CMakeFiles/fuse_library.dir/clean:
-	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/clean
-.PHONY : CMakeFiles/fuse_library.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/main.dir
-
-# All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=18,19,20 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Test/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
-
-# Convenience name for target.
-main: CMakeFiles/main.dir/rule
-
-.PHONY : main
-
-# clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/thread.dir/clean:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/clean
+.PHONY : CMakeFiles/thread.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

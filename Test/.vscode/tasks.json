@@ -1,0 +1,41 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc 生成活动文件",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "/home/zjh/wz_riscv/github/Test/code/src/demo_03.cpp",
+                "/home/zjh/wz_riscv/github/Test/code/src/fuse_fun.c",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I",
+                "/home/zjh/wz_riscv/github/Test/code/inc",
+                "-L",
+                "/usr/local/lib",
+                "-l",
+                "pthread",
+                "-l",
+                "rocksdb",
+                "-l",
+                "stdc++",
+                "-std=c++17" 
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}

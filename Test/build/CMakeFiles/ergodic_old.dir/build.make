@@ -57,34 +57,50 @@ include CMakeFiles/ergodic_old.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ergodic_old.dir/flags.make
 
-CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.o: CMakeFiles/ergodic_old.dir/flags.make
-CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.o: ../Test_code/src/ergodic_old.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.o   -c /home/zjh/wz_riscv/github/Test/Test_code/src/ergodic_old.c
+CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.o: CMakeFiles/ergodic_old.dir/flags.make
+CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.o: ../code/src/ergodic_old.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.o   -c /home/zjh/wz_riscv/github/Test/code/src/ergodic_old.c
 
-CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zjh/wz_riscv/github/Test/Test_code/src/ergodic_old.c > CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.i
+CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zjh/wz_riscv/github/Test/code/src/ergodic_old.c > CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.i
 
-CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zjh/wz_riscv/github/Test/Test_code/src/ergodic_old.c -o CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.s
+CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zjh/wz_riscv/github/Test/code/src/ergodic_old.c -o CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.s
+
+CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.o: CMakeFiles/ergodic_old.dir/flags.make
+CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.o: ../code/src/fuse_fun.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.o   -c /home/zjh/wz_riscv/github/Test/code/src/fuse_fun.c
+
+CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zjh/wz_riscv/github/Test/code/src/fuse_fun.c > CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.i
+
+CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zjh/wz_riscv/github/Test/code/src/fuse_fun.c -o CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.s
 
 # Object files for target ergodic_old
 ergodic_old_OBJECTS = \
-"CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.o"
+"CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.o" \
+"CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.o"
 
 # External object files for target ergodic_old
 ergodic_old_EXTERNAL_OBJECTS =
 
-../bin/Test/ergodic_old: CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.o
-../bin/Test/ergodic_old: CMakeFiles/ergodic_old.dir/build.make
-../bin/Test/ergodic_old: CMakeFiles/ergodic_old.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../bin/Test/ergodic_old"
+../bin/New/ergodic_old: CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.o
+../bin/New/ergodic_old: CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.o
+../bin/New/ergodic_old: CMakeFiles/ergodic_old.dir/build.make
+../bin/New/ergodic_old: ../lib/libdemo_03_library.a
+../bin/New/ergodic_old: CMakeFiles/ergodic_old.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zjh/wz_riscv/github/Test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/New/ergodic_old"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ergodic_old.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/ergodic_old.dir/build: ../bin/Test/ergodic_old
+CMakeFiles/ergodic_old.dir/build: ../bin/New/ergodic_old
 
 .PHONY : CMakeFiles/ergodic_old.dir/build
 

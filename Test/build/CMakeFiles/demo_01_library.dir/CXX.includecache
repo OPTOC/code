@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../code/inc/open_txt.h
+iostream
+-
+fstream
+-
+string
+-
+filesystem
+-
+unistd.h
+-
+
+/home/zjh/wz_riscv/github/Test/code/src/demo_01.cpp
+iostream
+-
+cassert
+-
+rocksdb/db.h
+/home/zjh/wz_riscv/github/Test/code/src/rocksdb/db.h
+open_txt.h
+/home/zjh/wz_riscv/github/Test/code/src/open_txt.h
+

@@ -1,1 +1,1 @@
-/usr/bin/cc  -Wall -Wall  -rdynamic CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.o  -o ../bin/Test/ergodic_old 
+/usr/bin/c++    -rdynamic CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.o CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.o  -o ../bin/New/ergodic_old  ../lib/libdemo_03_library.a -lrocksdb -lpthread 

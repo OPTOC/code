@@ -86,6 +86,17 @@ target_include_directories(fuse_test PRIVATE ${FUSE3_INCLUDE_DIRS} ${CODE_INC})
 #         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
 # )
 
+add_library(demo_03_library ${CODE_SRC}/demo_03.cpp)
+target_link_libraries(demo_03_library PRIVATE  pthread)
+target_include_directories(demo_03_library PRIVATE  ${CODE_INC})
+add_executable(ergodic_old ${CODE_SRC}/ergodic_old.c ${CODE_SRC}/fuse_fun.c)
+target_link_libraries(ergodic_old PRIVATE  demo_03_library rocksdb)
+target_include_directories(ergodic_old PRIVATE  ${CODE_INC})
+
+
+
+
+
 
 #*****************************测试验证部分*************************************#
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../bin/Test")#可执行文件

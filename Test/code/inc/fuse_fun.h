@@ -59,7 +59,9 @@ void print(void);
     .print = print \
   }
 
-
+extern DynamicStringArray dynamicStringArray;
+extern struct Queue Queuene; 
 #include "demo_02.h"
+// #include "demo_03.h"
 // #include <fuse.h>
 #endif

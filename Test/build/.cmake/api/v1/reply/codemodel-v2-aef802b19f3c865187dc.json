@@ -1,0 +1,158 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "main",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c-dc429b185c028a3e8219.json",
+					"name" : "c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ceshi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ceshi-f2a3ba6e2a49302903dc.json",
+					"name" : "ceshi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_01::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_01-03b6d6d91d596ffa5bb2.json",
+					"name" : "demo_01",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_03_library::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_03_library-f67fbfbb8c44e76c8b6e.json",
+					"name" : "demo_03_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "demo_library::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-demo_library-3496f7859a96e96daabd.json",
+					"name" : "demo_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ergodic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ergodic-2f9349ee24a57ace86c5.json",
+					"name" : "ergodic",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ergodic_old::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ergodic_old-648f3212c7afa532cb23.json",
+					"name" : "ergodic_old",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fuse_library::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fuse_library-3842fcd3e9fc4ae86fbf.json",
+					"name" : "fuse_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fuse_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fuse_test-993a1901c752297064c3.json",
+					"name" : "fuse_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-b5f483c63839f1be2075.json",
+					"name" : "main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "thread::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-thread-1006cb488139ab4ba510.json",
+					"name" : "thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "xmp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-xmp-6dd9b94f9ae165367061.json",
+					"name" : "xmp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zjh/wz_riscv/github/Test/build",
+		"source" : "/home/zjh/wz_riscv/github/Test"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

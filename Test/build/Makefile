@@ -111,17 +111,121 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named thread
+# Target rules for targets named main
 
 # Build rule for target.
-thread: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 thread
-.PHONY : thread
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-thread/fast:
-	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
-.PHONY : thread/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named fuse_library
+
+# Build rule for target.
+fuse_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fuse_library
+.PHONY : fuse_library
+
+# fast build rule for target.
+fuse_library/fast:
+	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/build
+.PHONY : fuse_library/fast
+
+#=============================================================================
+# Target rules for targets named demo_library
+
+# Build rule for target.
+demo_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_library
+.PHONY : demo_library
+
+# fast build rule for target.
+demo_library/fast:
+	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/build
+.PHONY : demo_library/fast
+
+#=============================================================================
+# Target rules for targets named demo_01
+
+# Build rule for target.
+demo_01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_01
+.PHONY : demo_01
+
+# fast build rule for target.
+demo_01/fast:
+	$(MAKE) -f CMakeFiles/demo_01.dir/build.make CMakeFiles/demo_01.dir/build
+.PHONY : demo_01/fast
+
+#=============================================================================
+# Target rules for targets named ergodic
+
+# Build rule for target.
+ergodic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ergodic
+.PHONY : ergodic
+
+# fast build rule for target.
+ergodic/fast:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/build
+.PHONY : ergodic/fast
+
+#=============================================================================
+# Target rules for targets named demo_03_library
+
+# Build rule for target.
+demo_03_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_03_library
+.PHONY : demo_03_library
+
+# fast build rule for target.
+demo_03_library/fast:
+	$(MAKE) -f CMakeFiles/demo_03_library.dir/build.make CMakeFiles/demo_03_library.dir/build
+.PHONY : demo_03_library/fast
+
+#=============================================================================
+# Target rules for targets named ceshi
+
+# Build rule for target.
+ceshi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ceshi
+.PHONY : ceshi
+
+# fast build rule for target.
+ceshi/fast:
+	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/build
+.PHONY : ceshi/fast
+
+#=============================================================================
+# Target rules for targets named fuse_test
+
+# Build rule for target.
+fuse_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fuse_test
+.PHONY : fuse_test
+
+# fast build rule for target.
+fuse_test/fast:
+	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/build
+.PHONY : fuse_test/fast
+
+#=============================================================================
+# Target rules for targets named xmp
+
+# Build rule for target.
+xmp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 xmp
+.PHONY : xmp
+
+# fast build rule for target.
+xmp/fast:
+	$(MAKE) -f CMakeFiles/xmp.dir/build.make CMakeFiles/xmp.dir/build
+.PHONY : xmp/fast
 
 #=============================================================================
 # Target rules for targets named ergodic_old
@@ -150,108 +254,17 @@ c/fast:
 .PHONY : c/fast
 
 #=============================================================================
-# Target rules for targets named fuse_test
+# Target rules for targets named thread
 
 # Build rule for target.
-fuse_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fuse_test
-.PHONY : fuse_test
+thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 thread
+.PHONY : thread
 
 # fast build rule for target.
-fuse_test/fast:
-	$(MAKE) -f CMakeFiles/fuse_test.dir/build.make CMakeFiles/fuse_test.dir/build
-.PHONY : fuse_test/fast
-
-#=============================================================================
-# Target rules for targets named ceshi
-
-# Build rule for target.
-ceshi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ceshi
-.PHONY : ceshi
-
-# fast build rule for target.
-ceshi/fast:
-	$(MAKE) -f CMakeFiles/ceshi.dir/build.make CMakeFiles/ceshi.dir/build
-.PHONY : ceshi/fast
-
-#=============================================================================
-# Target rules for targets named xmp
-
-# Build rule for target.
-xmp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 xmp
-.PHONY : xmp
-
-# fast build rule for target.
-xmp/fast:
-	$(MAKE) -f CMakeFiles/xmp.dir/build.make CMakeFiles/xmp.dir/build
-.PHONY : xmp/fast
-
-#=============================================================================
-# Target rules for targets named ergodic
-
-# Build rule for target.
-ergodic: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ergodic
-.PHONY : ergodic
-
-# fast build rule for target.
-ergodic/fast:
-	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/build
-.PHONY : ergodic/fast
-
-#=============================================================================
-# Target rules for targets named demo_01
-
-# Build rule for target.
-demo_01: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo_01
-.PHONY : demo_01
-
-# fast build rule for target.
-demo_01/fast:
-	$(MAKE) -f CMakeFiles/demo_01.dir/build.make CMakeFiles/demo_01.dir/build
-.PHONY : demo_01/fast
-
-#=============================================================================
-# Target rules for targets named demo_library
-
-# Build rule for target.
-demo_library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo_library
-.PHONY : demo_library
-
-# fast build rule for target.
-demo_library/fast:
-	$(MAKE) -f CMakeFiles/demo_library.dir/build.make CMakeFiles/demo_library.dir/build
-.PHONY : demo_library/fast
-
-#=============================================================================
-# Target rules for targets named fuse_library
-
-# Build rule for target.
-fuse_library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fuse_library
-.PHONY : fuse_library
-
-# fast build rule for target.
-fuse_library/fast:
-	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/build
-.PHONY : fuse_library/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+thread/fast:
+	$(MAKE) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
+.PHONY : thread/fast
 
 Test_code/src/c.o: Test_code/src/c.c.o
 
@@ -334,33 +347,6 @@ Test_code/src/ergodic.c.s:
 	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/Test_code/src/ergodic.c.s
 .PHONY : Test_code/src/ergodic.c.s
 
-Test_code/src/ergodic_old.o: Test_code/src/ergodic_old.c.o
-
-.PHONY : Test_code/src/ergodic_old.o
-
-# target to build an object file
-Test_code/src/ergodic_old.c.o:
-	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.o
-.PHONY : Test_code/src/ergodic_old.c.o
-
-Test_code/src/ergodic_old.i: Test_code/src/ergodic_old.c.i
-
-.PHONY : Test_code/src/ergodic_old.i
-
-# target to preprocess a source file
-Test_code/src/ergodic_old.c.i:
-	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.i
-.PHONY : Test_code/src/ergodic_old.c.i
-
-Test_code/src/ergodic_old.s: Test_code/src/ergodic_old.c.s
-
-.PHONY : Test_code/src/ergodic_old.s
-
-# target to generate assembly for a file
-Test_code/src/ergodic_old.c.s:
-	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/Test_code/src/ergodic_old.c.s
-.PHONY : Test_code/src/ergodic_old.c.s
-
 Test_code/src/thread.o: Test_code/src/thread.cpp.o
 
 .PHONY : Test_code/src/thread.o
@@ -442,6 +428,60 @@ code/src/demo_02.cpp.s:
 	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/demo_02.cpp.s
 .PHONY : code/src/demo_02.cpp.s
 
+code/src/demo_03.o: code/src/demo_03.cpp.o
+
+.PHONY : code/src/demo_03.o
+
+# target to build an object file
+code/src/demo_03.cpp.o:
+	$(MAKE) -f CMakeFiles/demo_03_library.dir/build.make CMakeFiles/demo_03_library.dir/code/src/demo_03.cpp.o
+.PHONY : code/src/demo_03.cpp.o
+
+code/src/demo_03.i: code/src/demo_03.cpp.i
+
+.PHONY : code/src/demo_03.i
+
+# target to preprocess a source file
+code/src/demo_03.cpp.i:
+	$(MAKE) -f CMakeFiles/demo_03_library.dir/build.make CMakeFiles/demo_03_library.dir/code/src/demo_03.cpp.i
+.PHONY : code/src/demo_03.cpp.i
+
+code/src/demo_03.s: code/src/demo_03.cpp.s
+
+.PHONY : code/src/demo_03.s
+
+# target to generate assembly for a file
+code/src/demo_03.cpp.s:
+	$(MAKE) -f CMakeFiles/demo_03_library.dir/build.make CMakeFiles/demo_03_library.dir/code/src/demo_03.cpp.s
+.PHONY : code/src/demo_03.cpp.s
+
+code/src/ergodic_old.o: code/src/ergodic_old.c.o
+
+.PHONY : code/src/ergodic_old.o
+
+# target to build an object file
+code/src/ergodic_old.c.o:
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.o
+.PHONY : code/src/ergodic_old.c.o
+
+code/src/ergodic_old.i: code/src/ergodic_old.c.i
+
+.PHONY : code/src/ergodic_old.i
+
+# target to preprocess a source file
+code/src/ergodic_old.c.i:
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.i
+.PHONY : code/src/ergodic_old.c.i
+
+code/src/ergodic_old.s: code/src/ergodic_old.c.s
+
+.PHONY : code/src/ergodic_old.s
+
+# target to generate assembly for a file
+code/src/ergodic_old.c.s:
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/code/src/ergodic_old.c.s
+.PHONY : code/src/ergodic_old.c.s
+
 code/src/fuse_fun.o: code/src/fuse_fun.c.o
 
 .PHONY : code/src/fuse_fun.o
@@ -449,6 +489,7 @@ code/src/fuse_fun.o: code/src/fuse_fun.c.o
 # target to build an object file
 code/src/fuse_fun.c.o:
 	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/fuse_fun.c.o
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.o
 .PHONY : code/src/fuse_fun.c.o
 
 code/src/fuse_fun.i: code/src/fuse_fun.c.i
@@ -458,6 +499,7 @@ code/src/fuse_fun.i: code/src/fuse_fun.c.i
 # target to preprocess a source file
 code/src/fuse_fun.c.i:
 	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/fuse_fun.c.i
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.i
 .PHONY : code/src/fuse_fun.c.i
 
 code/src/fuse_fun.s: code/src/fuse_fun.c.s
@@ -467,6 +509,7 @@ code/src/fuse_fun.s: code/src/fuse_fun.c.s
 # target to generate assembly for a file
 code/src/fuse_fun.c.s:
 	$(MAKE) -f CMakeFiles/fuse_library.dir/build.make CMakeFiles/fuse_library.dir/code/src/fuse_fun.c.s
+	$(MAKE) -f CMakeFiles/ergodic_old.dir/build.make CMakeFiles/ergodic_old.dir/code/src/fuse_fun.c.s
 .PHONY : code/src/fuse_fun.c.s
 
 code/src/fuse_test.o: code/src/fuse_test.c.o
@@ -610,19 +653,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... thread"
+	@echo "... main"
+	@echo "... fuse_library"
+	@echo "... demo_library"
+	@echo "... demo_01"
+	@echo "... ergodic"
+	@echo "... demo_03_library"
+	@echo "... ceshi"
+	@echo "... fuse_test"
+	@echo "... xmp"
 	@echo "... ergodic_old"
 	@echo "... c"
-	@echo "... fuse_test"
-	@echo "... ceshi"
-	@echo "... xmp"
-	@echo "... ergodic"
-	@echo "... demo_01"
-	@echo "... demo_library"
-	@echo "... fuse_library"
-	@echo "... main"
+	@echo "... thread"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... Test_code/src/c.o"
 	@echo "... Test_code/src/c.i"
 	@echo "... Test_code/src/c.s"
@@ -632,9 +676,6 @@ help:
 	@echo "... Test_code/src/ergodic.o"
 	@echo "... Test_code/src/ergodic.i"
 	@echo "... Test_code/src/ergodic.s"
-	@echo "... Test_code/src/ergodic_old.o"
-	@echo "... Test_code/src/ergodic_old.i"
-	@echo "... Test_code/src/ergodic_old.s"
 	@echo "... Test_code/src/thread.o"
 	@echo "... Test_code/src/thread.i"
 	@echo "... Test_code/src/thread.s"
@@ -644,6 +685,12 @@ help:
 	@echo "... code/src/demo_02.o"
 	@echo "... code/src/demo_02.i"
 	@echo "... code/src/demo_02.s"
+	@echo "... code/src/demo_03.o"
+	@echo "... code/src/demo_03.i"
+	@echo "... code/src/demo_03.s"
+	@echo "... code/src/ergodic_old.o"
+	@echo "... code/src/ergodic_old.i"
+	@echo "... code/src/ergodic_old.s"
 	@echo "... code/src/fuse_fun.o"
 	@echo "... code/src/fuse_fun.i"
 	@echo "... code/src/fuse_fun.s"

@@ -212,6 +212,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//Dependencies for the target
+demo_03_library_LIB_DEPENDS:STATIC=general;pthread;
+
 //Value Computed by CMake
 main_BINARY_DIR:STATIC=/home/zjh/wz_riscv/github/Test/build
 

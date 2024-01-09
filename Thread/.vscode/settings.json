@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "thread": "cpp",
+        "cassert": "cpp",
+        "dirent.h": "c",
+        "stdio.h": "c",
+    }
+}

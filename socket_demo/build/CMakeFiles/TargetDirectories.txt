@@ -1,0 +1,6 @@
+/home/zjh/Linux_demo/build/CMakeFiles/rebuild_cache.dir
+/home/zjh/Linux_demo/build/CMakeFiles/Server_txt.dir
+/home/zjh/Linux_demo/build/CMakeFiles/Server.dir
+/home/zjh/Linux_demo/build/CMakeFiles/edit_cache.dir
+/home/zjh/Linux_demo/build/CMakeFiles/Client_txt.dir
+/home/zjh/Linux_demo/build/CMakeFiles/Client.dir

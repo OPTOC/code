@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Client_txt.dir/src/Client_txt.cpp.o  -o ../bin/Client_txt  -lstdc++ 

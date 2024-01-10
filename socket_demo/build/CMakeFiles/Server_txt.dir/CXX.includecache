@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zjh/Linux_demo/src/Server_txt.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+cstring
+-
+sys/socket.h
+-
+netinet/in.h
+-
+unistd.h
+-
+arpa/inet.h
+-
+

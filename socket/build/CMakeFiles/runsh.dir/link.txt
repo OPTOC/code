@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/runsh.dir/src/runsh.cpp.o  -o ../bin/runsh  -lstdc++ -lz -lzip -larchive 

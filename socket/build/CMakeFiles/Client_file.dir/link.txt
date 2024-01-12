@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Client_file.dir/src/Client_file.cpp.o  -o ../bin/Client_file  -lstdc++ ../lib/libzip_library.a -lstdc++ -larchive 

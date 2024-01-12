@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libzip_library.a  CMakeFiles/zip_library.dir/src_lib/zip2.cpp.o
+/usr/bin/ranlib ../lib/libzip_library.a

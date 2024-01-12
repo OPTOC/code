@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/file_C.dir/src/file_C.cpp.o  -o ../bin/file_C  -lstdc++ -lz -lzip -larchive 

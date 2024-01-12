@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/zip2.h
+sys/types.h
+-
+sys/stat.h
+-
+archive.h
+-
+archive_entry.h
+-
+fcntl.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+
+/home/zjh/Linux_demo/src_lib/zip2.cpp
+zip2.h
+-
+iostream
+-
+

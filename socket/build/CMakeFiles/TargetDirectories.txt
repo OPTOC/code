@@ -1,0 +1,14 @@
+/home/zjh/Linux_demo/build/CMakeFiles/Client.dir
+/home/zjh/Linux_demo/build/CMakeFiles/Client_txt.dir
+/home/zjh/Linux_demo/build/CMakeFiles/rebuild_cache.dir
+/home/zjh/Linux_demo/build/CMakeFiles/edit_cache.dir
+/home/zjh/Linux_demo/build/CMakeFiles/Server_txt.dir
+/home/zjh/Linux_demo/build/CMakeFiles/file_C.dir
+/home/zjh/Linux_demo/build/CMakeFiles/zip_library.dir
+/home/zjh/Linux_demo/build/CMakeFiles/copyzip.dir
+/home/zjh/Linux_demo/build/CMakeFiles/file_S.dir
+/home/zjh/Linux_demo/build/CMakeFiles/runsh.dir
+/home/zjh/Linux_demo/build/CMakeFiles/Server_file.dir
+/home/zjh/Linux_demo/build/CMakeFiles/Server.dir
+/home/zjh/Linux_demo/build/CMakeFiles/zip.dir
+/home/zjh/Linux_demo/build/CMakeFiles/Client_file.dir

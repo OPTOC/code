@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zjh/wz_riscv/github/Thread/src/demo_03.cpp" "/home/zjh/wz_riscv/github/Thread/build/CMakeFiles/demo_03_library.dir/src/demo_03.cpp.o"
+  "/home/zjh/Thread/src/demo_03.cpp" "/home/zjh/Thread/build/CMakeFiles/demo_03_library.dir/src/demo_03.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

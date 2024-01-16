@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ergodic.dir/src/ergodic.c.o  -o ../bin/ergodic  ../lib/libdemo_er_library.a -lrocksdb -lpthread 

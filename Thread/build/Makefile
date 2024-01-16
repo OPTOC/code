@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zjh/wz_riscv/github/Thread
+CMAKE_SOURCE_DIR = /home/zjh/Thread
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zjh/wz_riscv/github/Thread/build
+CMAKE_BINARY_DIR = /home/zjh/Thread/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Thread/build/CMakeFiles /home/zjh/wz_riscv/github/Thread/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/Thread/build/CMakeFiles /home/zjh/Thread/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/wz_riscv/github/Thread/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zjh/Thread/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,58 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named demo_05
+
+# Build rule for target.
+demo_05: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_05
+.PHONY : demo_05
+
+# fast build rule for target.
+demo_05/fast:
+	$(MAKE) -f CMakeFiles/demo_05.dir/build.make CMakeFiles/demo_05.dir/build
+.PHONY : demo_05/fast
+
+#=============================================================================
+# Target rules for targets named demo_04
+
+# Build rule for target.
+demo_04: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_04
+.PHONY : demo_04
+
+# fast build rule for target.
+demo_04/fast:
+	$(MAKE) -f CMakeFiles/demo_04.dir/build.make CMakeFiles/demo_04.dir/build
+.PHONY : demo_04/fast
+
+#=============================================================================
+# Target rules for targets named ergodic
+
+# Build rule for target.
+ergodic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ergodic
+.PHONY : ergodic
+
+# fast build rule for target.
+ergodic/fast:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/build
+.PHONY : ergodic/fast
+
+#=============================================================================
+# Target rules for targets named demo_er_library
+
+# Build rule for target.
+demo_er_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo_er_library
+.PHONY : demo_er_library
+
+# fast build rule for target.
+demo_er_library/fast:
+	$(MAKE) -f CMakeFiles/demo_er_library.dir/build.make CMakeFiles/demo_er_library.dir/build
+.PHONY : demo_er_library/fast
 
 #=============================================================================
 # Target rules for targets named ergodic_old
@@ -163,6 +215,114 @@ src/demo_03.cpp.s:
 	$(MAKE) -f CMakeFiles/demo_03_library.dir/build.make CMakeFiles/demo_03_library.dir/src/demo_03.cpp.s
 .PHONY : src/demo_03.cpp.s
 
+src/demo_04.o: src/demo_04.cpp.o
+
+.PHONY : src/demo_04.o
+
+# target to build an object file
+src/demo_04.cpp.o:
+	$(MAKE) -f CMakeFiles/demo_04.dir/build.make CMakeFiles/demo_04.dir/src/demo_04.cpp.o
+.PHONY : src/demo_04.cpp.o
+
+src/demo_04.i: src/demo_04.cpp.i
+
+.PHONY : src/demo_04.i
+
+# target to preprocess a source file
+src/demo_04.cpp.i:
+	$(MAKE) -f CMakeFiles/demo_04.dir/build.make CMakeFiles/demo_04.dir/src/demo_04.cpp.i
+.PHONY : src/demo_04.cpp.i
+
+src/demo_04.s: src/demo_04.cpp.s
+
+.PHONY : src/demo_04.s
+
+# target to generate assembly for a file
+src/demo_04.cpp.s:
+	$(MAKE) -f CMakeFiles/demo_04.dir/build.make CMakeFiles/demo_04.dir/src/demo_04.cpp.s
+.PHONY : src/demo_04.cpp.s
+
+src/demo_05.o: src/demo_05.cpp.o
+
+.PHONY : src/demo_05.o
+
+# target to build an object file
+src/demo_05.cpp.o:
+	$(MAKE) -f CMakeFiles/demo_05.dir/build.make CMakeFiles/demo_05.dir/src/demo_05.cpp.o
+.PHONY : src/demo_05.cpp.o
+
+src/demo_05.i: src/demo_05.cpp.i
+
+.PHONY : src/demo_05.i
+
+# target to preprocess a source file
+src/demo_05.cpp.i:
+	$(MAKE) -f CMakeFiles/demo_05.dir/build.make CMakeFiles/demo_05.dir/src/demo_05.cpp.i
+.PHONY : src/demo_05.cpp.i
+
+src/demo_05.s: src/demo_05.cpp.s
+
+.PHONY : src/demo_05.s
+
+# target to generate assembly for a file
+src/demo_05.cpp.s:
+	$(MAKE) -f CMakeFiles/demo_05.dir/build.make CMakeFiles/demo_05.dir/src/demo_05.cpp.s
+.PHONY : src/demo_05.cpp.s
+
+src/demo_er.o: src/demo_er.cpp.o
+
+.PHONY : src/demo_er.o
+
+# target to build an object file
+src/demo_er.cpp.o:
+	$(MAKE) -f CMakeFiles/demo_er_library.dir/build.make CMakeFiles/demo_er_library.dir/src/demo_er.cpp.o
+.PHONY : src/demo_er.cpp.o
+
+src/demo_er.i: src/demo_er.cpp.i
+
+.PHONY : src/demo_er.i
+
+# target to preprocess a source file
+src/demo_er.cpp.i:
+	$(MAKE) -f CMakeFiles/demo_er_library.dir/build.make CMakeFiles/demo_er_library.dir/src/demo_er.cpp.i
+.PHONY : src/demo_er.cpp.i
+
+src/demo_er.s: src/demo_er.cpp.s
+
+.PHONY : src/demo_er.s
+
+# target to generate assembly for a file
+src/demo_er.cpp.s:
+	$(MAKE) -f CMakeFiles/demo_er_library.dir/build.make CMakeFiles/demo_er_library.dir/src/demo_er.cpp.s
+.PHONY : src/demo_er.cpp.s
+
+src/ergodic.o: src/ergodic.c.o
+
+.PHONY : src/ergodic.o
+
+# target to build an object file
+src/ergodic.c.o:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/src/ergodic.c.o
+.PHONY : src/ergodic.c.o
+
+src/ergodic.i: src/ergodic.c.i
+
+.PHONY : src/ergodic.i
+
+# target to preprocess a source file
+src/ergodic.c.i:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/src/ergodic.c.i
+.PHONY : src/ergodic.c.i
+
+src/ergodic.s: src/ergodic.c.s
+
+.PHONY : src/ergodic.s
+
+# target to generate assembly for a file
+src/ergodic.c.s:
+	$(MAKE) -f CMakeFiles/ergodic.dir/build.make CMakeFiles/ergodic.dir/src/ergodic.c.s
+.PHONY : src/ergodic.c.s
+
 src/ergodic_old.o: src/ergodic_old.c.o
 
 .PHONY : src/ergodic_old.o
@@ -196,13 +356,29 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... demo_05"
+	@echo "... demo_04"
+	@echo "... ergodic"
+	@echo "... demo_er_library"
 	@echo "... ergodic_old"
 	@echo "... demo_03_library"
 	@echo "... src/demo_03.o"
 	@echo "... src/demo_03.i"
 	@echo "... src/demo_03.s"
+	@echo "... src/demo_04.o"
+	@echo "... src/demo_04.i"
+	@echo "... src/demo_04.s"
+	@echo "... src/demo_05.o"
+	@echo "... src/demo_05.i"
+	@echo "... src/demo_05.s"
+	@echo "... src/demo_er.o"
+	@echo "... src/demo_er.i"
+	@echo "... src/demo_er.s"
+	@echo "... src/ergodic.o"
+	@echo "... src/ergodic.i"
+	@echo "... src/ergodic.s"
 	@echo "... src/ergodic_old.o"
 	@echo "... src/ergodic_old.i"
 	@echo "... src/ergodic_old.s"

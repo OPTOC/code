@@ -3,4 +3,4 @@
 
 CMakeFiles/ergodic_old.dir/src/ergodic_old.c.o
  ../inc/demo_03.h
- /home/zjh/wz_riscv/github/Thread/src/ergodic_old.c
+ /home/zjh/Thread/src/ergodic_old.c

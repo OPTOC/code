@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/zjh/wz_riscv/github/Thread/src/ergodic_old.c" "/home/zjh/wz_riscv/github/Thread/build/CMakeFiles/ergodic_old.dir/src/ergodic_old.c.o"
+  "/home/zjh/Thread/src/ergodic_old.c" "/home/zjh/Thread/build/CMakeFiles/ergodic_old.dir/src/ergodic_old.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/zjh/wz_riscv/github/Thread/build/CMakeFiles/demo_03_library.dir/DependInfo.cmake"
+  "/home/zjh/Thread/build/CMakeFiles/demo_03_library.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

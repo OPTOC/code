@@ -28,7 +28,7 @@ string.h
 stdlib.h
 -
 
-/home/zjh/wz_riscv/github/Thread/src/ergodic_old.c
+/home/zjh/Thread/src/ergodic_old.c
 demo_03.h
-/home/zjh/wz_riscv/github/Thread/src/demo_03.h
+/home/zjh/Thread/src/demo_03.h
 

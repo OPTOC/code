@@ -20,3 +20,17 @@ target_include_directories(demo_03_library PRIVATE  ${CODE_INC})    #添加头�
 add_executable(ergodic_old ${CODE_SRC}/ergodic_old.c )              #生成ergodic_old可执行文件
 target_link_libraries(ergodic_old PRIVATE  demo_03_library rocksdb) #添加各种库
 target_include_directories(ergodic_old PRIVATE  ${CODE_INC})        #添加头文件
+
+add_library(demo_er_library ${CODE_SRC}/demo_er.cpp)                #编译成demo_03_library库
+target_link_libraries(demo_er_library PRIVATE  pthread)             #添加线程库
+target_include_directories(demo_er_library PRIVATE  ${CODE_INC})    #添加头文件
+add_executable(ergodic ${CODE_SRC}/ergodic.c )              #生成ergodic_old可执行文件
+target_link_libraries(ergodic PRIVATE  demo_er_library rocksdb) #添加各种库
+target_include_directories(ergodic PRIVATE  ${CODE_INC})        #添加头文件
+
+
+add_executable(demo_04 ${CODE_SRC}/demo_04.cpp )                    #生成ergodic_old可执行文件
+target_link_libraries(demo_04 PRIVATE   rocksdb)                    #添加各种库
+
+add_executable(demo_05 ${CODE_SRC}/demo_05.cpp )                    #生成ergodic_old可执行文件
+target_link_libraries(demo_05 PRIVATE   rocksdb)                    #添加各种库

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zjh/Thread/src/demo_04.cpp
+rocksdb/db.h
+/home/zjh/Thread/src/rocksdb/db.h
+rocksdb/options.h
+/home/zjh/Thread/src/rocksdb/options.h
+iostream
+-
+cassert
+-
+

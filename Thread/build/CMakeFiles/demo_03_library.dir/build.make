@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zjh/wz_riscv/github/Thread
+CMAKE_SOURCE_DIR = /home/zjh/Thread
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zjh/wz_riscv/github/Thread/build
+CMAKE_BINARY_DIR = /home/zjh/Thread/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/demo_03_library.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/demo_03_library.dir/flags.make
 
 CMakeFiles/demo_03_library.dir/src/demo_03.cpp.o: CMakeFiles/demo_03_library.dir/flags.make
 CMakeFiles/demo_03_library.dir/src/demo_03.cpp.o: ../src/demo_03.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjh/wz_riscv/github/Thread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo_03_library.dir/src/demo_03.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo_03_library.dir/src/demo_03.cpp.o -c /home/zjh/wz_riscv/github/Thread/src/demo_03.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zjh/Thread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo_03_library.dir/src/demo_03.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/demo_03_library.dir/src/demo_03.cpp.o -c /home/zjh/Thread/src/demo_03.cpp
 
 CMakeFiles/demo_03_library.dir/src/demo_03.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo_03_library.dir/src/demo_03.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zjh/wz_riscv/github/Thread/src/demo_03.cpp > CMakeFiles/demo_03_library.dir/src/demo_03.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zjh/Thread/src/demo_03.cpp > CMakeFiles/demo_03_library.dir/src/demo_03.cpp.i
 
 CMakeFiles/demo_03_library.dir/src/demo_03.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo_03_library.dir/src/demo_03.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zjh/wz_riscv/github/Thread/src/demo_03.cpp -o CMakeFiles/demo_03_library.dir/src/demo_03.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zjh/Thread/src/demo_03.cpp -o CMakeFiles/demo_03_library.dir/src/demo_03.cpp.s
 
 # Object files for target demo_03_library
 demo_03_library_OBJECTS = \
@@ -80,7 +80,7 @@ demo_03_library_EXTERNAL_OBJECTS =
 ../lib/libdemo_03_library.a: CMakeFiles/demo_03_library.dir/src/demo_03.cpp.o
 ../lib/libdemo_03_library.a: CMakeFiles/demo_03_library.dir/build.make
 ../lib/libdemo_03_library.a: CMakeFiles/demo_03_library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zjh/wz_riscv/github/Thread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../lib/libdemo_03_library.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zjh/Thread/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../lib/libdemo_03_library.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/demo_03_library.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/demo_03_library.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +94,6 @@ CMakeFiles/demo_03_library.dir/clean:
 .PHONY : CMakeFiles/demo_03_library.dir/clean
 
 CMakeFiles/demo_03_library.dir/depend:
-	cd /home/zjh/wz_riscv/github/Thread/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zjh/wz_riscv/github/Thread /home/zjh/wz_riscv/github/Thread /home/zjh/wz_riscv/github/Thread/build /home/zjh/wz_riscv/github/Thread/build /home/zjh/wz_riscv/github/Thread/build/CMakeFiles/demo_03_library.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zjh/Thread/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zjh/Thread /home/zjh/Thread /home/zjh/Thread/build /home/zjh/Thread/build /home/zjh/Thread/build/CMakeFiles/demo_03_library.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/demo_03_library.dir/depend
 

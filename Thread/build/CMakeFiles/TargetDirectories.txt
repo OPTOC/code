@@ -1,4 +1,8 @@
-/home/zjh/wz_riscv/github/Thread/build/CMakeFiles/rebuild_cache.dir
-/home/zjh/wz_riscv/github/Thread/build/CMakeFiles/edit_cache.dir
-/home/zjh/wz_riscv/github/Thread/build/CMakeFiles/ergodic_old.dir
-/home/zjh/wz_riscv/github/Thread/build/CMakeFiles/demo_03_library.dir
+/home/zjh/Thread/build/CMakeFiles/edit_cache.dir
+/home/zjh/Thread/build/CMakeFiles/rebuild_cache.dir
+/home/zjh/Thread/build/CMakeFiles/demo_05.dir
+/home/zjh/Thread/build/CMakeFiles/demo_04.dir
+/home/zjh/Thread/build/CMakeFiles/ergodic.dir
+/home/zjh/Thread/build/CMakeFiles/demo_er_library.dir
+/home/zjh/Thread/build/CMakeFiles/ergodic_old.dir
+/home/zjh/Thread/build/CMakeFiles/demo_03_library.dir

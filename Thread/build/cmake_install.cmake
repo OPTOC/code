@@ -1,4 +1,4 @@
-# Install script for directory: /home/zjh/wz_riscv/github/Thread
+# Install script for directory: /home/zjh/Thread
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zjh/wz_riscv/github/Thread/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zjh/Thread/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

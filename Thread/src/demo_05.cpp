@@ -42,22 +42,18 @@ int main() {
         goto cleanup;
     }
 
-    // // 在这里进行读写操作，例如写入数据到列族中
-    // rocksdb::WriteOptions write_options_cf;
-    // status = db->Put(write_options_cf, column_family_handles[1], "key2", "我是好人");
-    // assert(status.ok());
-    rocksdb::ColumnFamilyHandle* cf_handle = column_family_handles[1]; // 获取列族句柄
-    rocksdb::WriteBatch write_options; 
-    write_options.Put(cf_handle, "key2", "不是人");
-    db->Write(rocksdb::WriteOptions(), &write_options);
+    // 在这里进行读写操作，例如写入数据到列族中
+    rocksdb::WriteOptions write_options_cf;
+    status = db->Put(write_options_cf, column_family_handles[1], "key2", "我是坏人");
+    assert(status.ok());
 
 
     // 查询数据 使用列族句柄进行查询
     std::string value;
     rocksdb::ReadOptions read_options;
-    status = db->Get(read_options, column_family_handles[1], "存入最终大小", &value);
+    status = db->Get(read_options, column_family_handles[1], "key2", &value);
     assert(status.ok());
-    std::cout << "Value for 存入最终大小: " << value << std::endl;
+    std::cout << "Value for key2: " << value << std::endl;
 
     // 关闭数据库和列族句柄
     for (auto handle : column_family_handles) {

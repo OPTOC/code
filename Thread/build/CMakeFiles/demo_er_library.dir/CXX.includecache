@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/ergodic.h
+iostream
+-
+cassert
+-
+thread
+-
+mutex
+-
+chrono
+-
+rocksdb/db.h
+../inc/rocksdb/db.h
+stdio.h
+-
+dirent.h
+-
+string.h
+-
+stdlib.h
+-
+
+/home/zjh/Thread/src/demo_er.cpp
+ergodic.h
+/home/zjh/Thread/src/ergodic.h
+
